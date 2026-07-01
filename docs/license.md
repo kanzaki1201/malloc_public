@@ -2,10 +2,10 @@
 
 Please refer to the following VN3 license.
 
-English: ![](assets/20260701113038vn3license_en.pdf)
+English:![](assets/20260702123812vn3license_en.pdf)
 
-Japanese:![](assets/20260701113038vn3license_ja.pdf)
+Japanese:![](assets/20260702123812vn3license_ja.pdf)
 
-Korean:![](assets/20260701113038vn3license_ko.pdf)
+Korean:![](assets/20260702123812vn3license_ko.pdf)
 
-Chinese: ![](assets/20260701113038vn3license_zh.pdf)
+Chinese:![](assets/20260702123812vn3license_zh.pdf)
