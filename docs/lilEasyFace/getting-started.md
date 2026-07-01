@@ -18,7 +18,14 @@ The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/feature
 
 - Unity 2022.3 or later
 - [lilToon](https://lilxyzw.github.io/lilToon/) 2.3.2 or later, imported first
-- Built-in Render Pipeline or Universal Render Pipeline (HDRP should work in theory but hasn't been tested)
+- 
+## Compatibility
+- Built-in Render Pipeline: YES
+- Universal Render Pipeline: YES
+- High Definition Render Pipeline: Not tested, should work in theory
+- Warudo: YES
+- VRChat: NO
+
 
 ## Install
 

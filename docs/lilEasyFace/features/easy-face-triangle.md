@@ -26,3 +26,9 @@ This requires baking — run the [Data Baker](./data-baker) and assign the baked
 ## Combine both faders
 Combine both faders to confine the effect to near-horizon light. 
 ![](../../assets/easyft_combined.webm)
+
+## Making a mask
+Just draw the area you want to have Rembrandt light, then blur the edges. (I used Gaussian Blur here.)
+![](../../assets/face_triangle_mask_sample.png)
+
+You can do it in any image editing software (Krita, Clip Studio Paint, Procreate etc), or 3D modelling software (Blender texture painting, Substance Painter, etc), or even [within Unity](https://booth.pm/en/items/7951475). 
