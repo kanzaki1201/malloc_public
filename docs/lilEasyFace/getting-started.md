@@ -18,11 +18,14 @@ The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/feature
 
 - Unity 2021.3.18f1 or later
 - [lilToon](https://lilxyzw.github.io/lilToon/) 2.3.2 or later, imported first
+- Built-in RP or Universal Render Pipeline (HDRP should work in theory but hasn't been tested)
 
 ## Install
 
 ::: tip Download
 The release download link will go here once it is published.
+
+Included in your Booth.pm purchase there is an example package too.
 :::
 
 1. Import **lilToon** into your project first.
