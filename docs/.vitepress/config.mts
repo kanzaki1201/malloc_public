@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-US',
-  title: 'lilEasyFace',
-  description: 'User guide for lilEasyFace — anime-style face shading for lilToon.',
+  title: 'malloc',
+  description: "Documentation for malloc's VRChat avatar shaders and tools.",
   base: '/malloc_public/',
   cleanUrls: true,
   lastUpdated: true,
@@ -17,25 +17,46 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'Guide', link: '/guide/getting-started' },
-      { text: 'Report an issue', link: 'https://github.com/kanzaki1201/malloc_public/issues/new/choose' }
-    ],
-
-    sidebar: [
+      { text: 'lilEasyFace', link: '/lilEasyFace/getting-started', activeMatch: '/lilEasyFace/' },
+      { text: 'Report a Bug', link: '/bug-report' },
       {
-        text: 'Getting Started',
-        items: [{ text: 'Introduction & Install', link: '/guide/getting-started' }]
-      },
-      {
-        text: 'Features',
+        text: 'About',
         items: [
-          { text: 'Easy Face Triangle', link: '/guide/easy-face-triangle' },
-          { text: 'Smooth Vertex Normal', link: '/guide/smooth-vertex-normal' },
-          { text: 'Object-Space Normal Map', link: '/guide/object-space-normal-map' },
-          { text: 'Data Baker', link: '/guide/data-baker' }
+          { text: 'Contact', link: '/contact' },
+          { text: 'Credits', link: '/credits' },
+          { text: 'License', link: '/license' }
         ]
       }
     ],
+
+    // Per-product sidebars keyed by path. Add another product by dropping in a
+    // new `/<product>/` key plus its content folder — nothing else changes.
+    sidebar: {
+      '/lilEasyFace/': [
+        {
+          text: 'lilEasyFace',
+          items: [
+            {
+              text: 'Getting Started',
+              collapsed: false,
+              items: [
+                { text: 'Introduction & Install', link: '/lilEasyFace/getting-started' }
+              ]
+            },
+            {
+              text: 'Features',
+              collapsed: false,
+              items: [
+                { text: 'Easy Face Triangle', link: '/lilEasyFace/features/easy-face-triangle' },
+                { text: 'Smooth Vertex Normal', link: '/lilEasyFace/features/smooth-vertex-normal' },
+                { text: 'Object-Space Normal Map', link: '/lilEasyFace/features/object-space-normal-map' },
+                { text: 'Data Baker', link: '/lilEasyFace/features/data-baker' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/kanzaki1201/malloc_public' }
