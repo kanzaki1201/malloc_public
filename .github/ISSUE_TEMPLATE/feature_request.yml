@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an idea or improvement for lilEasyFace.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: What are you trying to do that's hard or impossible today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Describe the feature
+    validations:
+      required: true

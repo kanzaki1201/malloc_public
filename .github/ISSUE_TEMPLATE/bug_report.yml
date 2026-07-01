@@ -1,0 +1,56 @@
+name: Bug report
+description: Something in lilEasyFace isn't working as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report! Please fill in the details below so it's reproducible.
+  - type: input
+    id: version
+    attributes:
+      label: lilEasyFace version
+      placeholder: e.g. 0.6.0
+    validations:
+      required: true
+  - type: input
+    id: liltoon
+    attributes:
+      label: lilToon version
+      placeholder: e.g. 2.3.4
+    validations:
+      required: true
+  - type: input
+    id: unity
+    attributes:
+      label: Unity version
+      placeholder: e.g. 2022.3.22f1
+    validations:
+      required: true
+  - type: dropdown
+    id: pipeline
+    attributes:
+      label: Render pipeline
+      options:
+        - Built-in RP
+        - URP
+        - HDRP
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead? Screenshots help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: false

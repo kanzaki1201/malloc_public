@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://kanzaki1201.github.io/malloc_public/
+    about: Read the lilEasyFace user guide first — it may already answer your question.
