@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en-US',
   title: 'malloc',
-  description: "Documentation for malloc's VRChat avatar shaders and tools.",
+  description: "Documentation for malloc's lilToon shaders and tools.",
   base: '/malloc_public/',
   cleanUrls: true,
   lastUpdated: true,
