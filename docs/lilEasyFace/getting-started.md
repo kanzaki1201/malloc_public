@@ -1,12 +1,20 @@
 # Introduction
 
-**lilEasyFace** is a custom [lilToon](https://lilxyzw.github.io/lilToon/) shader add-on that layers
-anime-style face shading on top of stock lilToon, without modifying it. It adds four opt-in features:
+**lilEasyFace** is a custom [lilToon](https://lilxyzw.github.io/lilToon/) shader add-on. It takes a few
+stylized face-shading techniques that normally send you into Blender or a texture-baking pipeline and turns
+each one into a toggle in the Unity material editor. The name is the point: **easy**.
 
-- **[Easy Face Triangle](/lilEasyFace/features/easy-face-triangle)** — symmetric toon face shading.
-- **[Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal)** — a baked radial normal that rounds out toon shading.
-- **[Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map)** — reinterpret the main normal-map slot as object-space.
-- **[Data Baker](/lilEasyFace/features/data-baker)** — bakes the per-vertex data the head-tracking features need, with no runtime scripts (VRChat-safe).
+- Get **smooth, rounded toon shading** without transferring normals from a proxy sphere in Blender — just
+  enable [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal) and bake once, in Unity.
+- Get the symmetric **"face triangle" cheek light** without hand-editing face normals *or* drawing and baking
+  a multi-angle SDF face-shadow map — [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle) needs a
+  single mask.
+- And if you *do* want full manual control, [Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map)
+  lets you drop a hand-painted object-space normal straight into lilToon's main normal slot.
+
+It layers on top of stock lilToon without modifying it, and every feature is **opt-in** (off by default). The
+head-tracking features rely on a one-click [Data Baker](/lilEasyFace/features/data-baker) and no runtime
+scripts, so they work on VRChat.
 
 ## Requirements
 
