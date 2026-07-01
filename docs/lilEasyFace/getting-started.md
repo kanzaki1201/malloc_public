@@ -1,14 +1,18 @@
 # Introduction
 
-**lilEasyFace** is a custom [lilToon](https://lilxyzw.github.io/lilToon/) shader add-on. It takes a few
-stylized face-shading techniques that normally send you into Blender or a texture-baking pipeline and turns
-each one into a toggle in the Unity material editor. The name is the point: **easy**.
+![](../assets/getting_started.webm)
 
-- Get **smooth, rounded toon shading** without transferring normals from a proxy sphere in Blender — just enable [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal) and bake once, in Unity.
-- Get the symmetric **"face triangle" light (Rembrandt light)** without hand-editing face normals *or* drawing and baking a multi-angle SDF face-shadow map — [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle) needs a single mask.
-- And if you *do* want full manual control, [Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map) lets you drop a hand-painted object-space normal straight into lilToon's main normal map slot, with no need to convert it to tangent space first.
+**lilEasyFace** is a custom [lilToon](https://lilxyzw.github.io/lilToon/) shader add-on. It takes a few stylized face-shading techniques that normally send you into Blender or a texture-baking pipeline and turns each one into a toggle in the Unity material editor. The name is the point: **easy**.
 
-It layers on top of stock lilToon without modifying it, and every feature is **opt-in** (off by default). The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/features/data-baker) in Unity editor and no runtime scripts.
+- Get **smooth, rounded toon shading** without transferring normals from a proxy sphere in Blender or DCC software — just enable [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal).
+- Get **"face triangle" light (Rembrandt light)** without hand-editing face normals *or* drawing and baking a multi-angle SDF face-shadow map — [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle) needs a single mask.
+- And if you *do* want full manual control, [Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map) lets you drop a hand-painted object-space normal directly into lilToon's main normal map slot.
+
+All features work well together with each other.
+
+It layers on top of stock lilToon without modifying it, and every feature is **opt-in** (off by default). 
+
+The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/features/data-baker) in Unity editor and no runtime scripts.
 
 ## Requirements
 
@@ -24,9 +28,6 @@ The release download link will go here once it is published.
 1. Import **lilToon** into your project first.
 2. Import the **lilEasyFace** package.
 3. Select a material and set its shader to **lilEasyFace** (shader picker → `lilEasyFace`).
-
-All features are **off by default** — enable the ones you want in the material inspector. Each feature has
-its own foldout section.
 
 ## Next steps
 

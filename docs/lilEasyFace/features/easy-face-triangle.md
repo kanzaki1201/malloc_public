@@ -2,6 +2,7 @@
 
 Creates fake Rembrandt light (triangle face light) by mirroring
 the surface normal across the character's left/right axis and takes whichever side is more lit.
+
 ## Settings
 
 - **Mask (R)** — the red channel controls per-pixel strength. Black = no effect, white = full. 

@@ -1,6 +1,6 @@
 # Contact
 
-For bug reports, feature requests, and questions, please use the **malloc_public** repository:
+For bug reports, feature requests, and questions, please use the **malloc_public** Github repository:
 
 ::: tip
 [github.com/kanzaki1201/malloc_public/issues](https://github.com/kanzaki1201/malloc_public/issues)

@@ -2,6 +2,8 @@
 
 Reinterprets lilToon's main (1st) normal-map slot as an **object-space** normal map.
 
+Normal maps are often in [tangent space](https://3dcoat.com/documentation/2025/01/13/types-of-normal-maps/). lilToon's normal map slots are intended for tangent space normal maps also. If one has a hand painted object space normal map for stylization, normally one would need to bake it to tangent space in Blender or other DCC software. This feature allows you to use an object space normal map directly.
+
 ## Enable
 
 1. Import your object-space normal map. In the importer settings, its `Texture Type` should NOT be marked as normal map.

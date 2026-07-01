@@ -1,7 +1,6 @@
 # Report a Bug
 
-Found a bug in lilEasyFace? Please report it in the **malloc_public** repository — that's the place to
-raise it.
+Found a bug in lilEasyFace? Please report it on Github in the **malloc_public** repository.
 
 ::: tip Open an issue
 [github.com/kanzaki1201/malloc_public/issues](https://github.com/kanzaki1201/malloc_public/issues/new/choose)

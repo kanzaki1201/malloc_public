@@ -1,8 +1,8 @@
 # Smooth Vertex Normal
 
-Rounds out toon shading by overriding the world vertex normal with a smooth radial normal. 
+Achive clean shadow shape and borders by overriding the world vertex normal with a smooth radial normal. 
 
-It is a step similar to transferring normals from a sphere mesh in Blender, Maya, etc. 
+It is a step similar to transferring normals from a sphere/elliptoid proxy mesh in Blender, Maya, etc. 
 
 Smooth Vertex Normal requires **data bake** using [Data Baker](./data-baker).
 
