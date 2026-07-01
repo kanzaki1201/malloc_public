@@ -30,9 +30,6 @@ The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/feature
 ## Install
 
 ::: tip Download
-The release download link will go here once it is published.
-
-Included in your Booth.pm purchase there is an example package too.
 :::
 
 1. Import **lilToon** into your project first.
