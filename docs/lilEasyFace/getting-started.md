@@ -6,11 +6,11 @@ each one into a toggle in the Unity material editor. The name is the point: **ea
 
 - Get **smooth, rounded toon shading** without transferring normals from a proxy sphere in Blender — just
   enable [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal) and bake once, in Unity.
-- Get the symmetric **"face triangle" cheek light** without hand-editing face normals *or* drawing and baking
+- Get the symmetric **"face triangle" light (Rembrandt light)** without hand-editing face normals *or* drawing and baking
   a multi-angle SDF face-shadow map — [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle) needs a
   single mask.
 - And if you *do* want full manual control, [Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map)
-  lets you drop a hand-painted object-space normal straight into lilToon's main normal slot.
+  lets you drop a hand-painted object-space normal straight into lilToon's main normal map slot.
 
 It layers on top of stock lilToon without modifying it, and every feature is **opt-in** (off by default). The
 head-tracking features rely on a one-click [Data Baker](/lilEasyFace/features/data-baker) and no runtime
