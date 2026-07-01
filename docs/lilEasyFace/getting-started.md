@@ -16,9 +16,9 @@ The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/feature
 
 ## Requirements
 
-- Unity 2021.3.18f1 or later
+- Unity 2022.3 or later
 - [lilToon](https://lilxyzw.github.io/lilToon/) 2.3.2 or later, imported first
-- Built-in RP or Universal Render Pipeline (HDRP should work in theory but hasn't been tested)
+- Built-in Render Pipeline or Universal Render Pipeline (HDRP should work in theory but hasn't been tested)
 
 ## Install
 
