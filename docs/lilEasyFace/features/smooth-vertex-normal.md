@@ -1,20 +1,25 @@
 # Smooth Vertex Normal
 
-Rounds out toon shading by overriding the world vertex normal with a smooth radial normal, so the lighting
-terminator sweeps cleanly across the face instead of catching on the nose and other small forms. It runs at the
-vertex stage and drives all shading — no normal map required.
+Rounds out toon shading by overriding the world vertex normal with a smooth radial normal. 
 
-Smooth Vertex Normal is **always baked**: it reconstructs the radial from data the [Data Baker](./data-baker)
-writes, so it follows the head bone with no runtime script (VRChat-safe).
+It is a step similar to transferring normals from a sphere mesh in Blender, Maya, etc. 
 
-## Enable
-
-1. Bake the mesh with the [Data Baker](./data-baker) and assign the baked mesh to the renderer.
-2. In the material inspector, open **Smooth Vertex Normal** and turn on **Enable**.
+Smooth Vertex Normal requires **data bake** using [Data Baker](./data-baker) in order to correctly follow head movements.
 
 ## Settings
 
 - **Spherical** — blends from the original normal (0) to the fully spherical normal (1).
-- **Flatten Up** — squashes the sphere toward a cylinder (less domed). 0 = pure sphere.
+- **Flatten Up** — squashes the sphere toward a cylinder (less domed). 0 = pure sphere. 1 = all normals points towards 
 - **Push Forward** — biases the normal toward the object's forward axis (more frontal). 0 = pure sphere.
-- **Mask (R)** — optional; the red channel multiplies the Spherical amount per vertex.
+- **Mask (RGB)** — optional, per-vertex. **R** scales Spherical, **G** scales Flatten Up, **B** scales Push Forward. Unassigned (white) = every channel at full.
+
+## Preview normals in the Scene view
+
+To see exactly what the smooth normal does, turn on **Preview Normals (Scene)** in the Smooth Vertex Normal
+section and select the face object. The adjusted normals are drawn as lines in the Scene view (cyan), so you
+can watch them fan out into a sphere as you raise Spherical, or flatten as you raise Flatten Up.
+
+- **Preview Length** — length of the lines.
+- **Preview Density** — draw every Nth vertex (raise it if a dense mesh gets too busy).
+- **Show Original** — also draws the un-adjusted normals in orange, for a before/after comparison.
+
