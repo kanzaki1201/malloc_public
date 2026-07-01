@@ -69,7 +69,8 @@ export default defineConfig({
                 { text: 'Object-Space Normal Map', link: '/lilEasyFace/features/object-space-normal-map' },
                 { text: 'Data Baker', link: '/lilEasyFace/features/data-baker' }
               ]
-            }
+            },
+            { text: 'Changelog', link: '/lilEasyFace/changelog' }
           ]
         }
       ]
