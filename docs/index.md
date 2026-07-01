@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: lilEasyFace
-  text: Face shading for lilToon, the easy way
-  tagline: The stylized-face looks that usually mean a Blender round-trip or an SDF bake — smooth face normals, a symmetric "face triangle" cheek light, hand-painted object-space normals — done in Unity with a toggle and, at most, one texture.
+  text: Easier face shading for lilToon
+  tagline: Smooth vertex normals, a symmetric "face triangle" light, and object-space normal maps — set up in lilToon's material editor, with less of the Blender and baking these looks often take.
   actions:
     - theme: brand
       text: Get Started
@@ -15,15 +15,15 @@ hero:
 
 features:
   - title: Smooth Vertex Normal
-    details: Rounded toon face shading without transferring normals from a proxy sphere in Blender — enable it and bake once, right in Unity.
+    details: Rounds out toon shading with a baked radial normal — no separate normal-transfer pass in Blender.
     link: /lilEasyFace/features/smooth-vertex-normal
   - title: Easy Face Triangle
-    details: The symmetric "face triangle" cheek light without editing normals in Blender or drawing and baking a multi-angle SDF shadow. One mask, one toggle.
+    details: A symmetric "face triangle" cheek light from a single mask, instead of a baked multi-angle SDF.
     link: /lilEasyFace/features/easy-face-triangle
   - title: Object-Space Normal Map
-    details: Rather hand-paint the normals yourself? Drop a hand-authored object-space normal straight into the main normal slot — no separate slot, no fuss.
+    details: Use a hand-painted object-space normal in lilToon's main normal slot.
     link: /lilEasyFace/features/object-space-normal-map
   - title: Data Baker
-    details: One click bakes the per-vertex data the head-tracking features need. No runtime scripts, VRChat-safe.
+    details: Bakes the per-vertex data the head-tracking features need, in one pass.
     link: /lilEasyFace/features/data-baker
 ---
