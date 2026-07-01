@@ -7,9 +7,9 @@ It is a step similar to transferring normals from a sphere mesh in Blender, Maya
 Smooth Vertex Normal requires **data bake** using [Data Baker](./data-baker).
 
 ## Settings
-- **Spherical** — blends from the original normal (0) to the fully spherical normal (1). <video src="/media/smooth_normal_spherical.webm" autoplay loop muted playsinline width="480"></video>
-- **Flatten Up** — squashes the sphere toward a cylinder (less domed). <video src="/media/smooth_normal_flatten_up.webm" autoplay loop muted playsinline width="480"></video>
-- **Push Forward** — biases the normal toward the object's forward axis (more frontal). <video src="/media/smooth_normal_push_forward.webm" autoplay loop muted playsinline width="480"></video>
+- **Spherical** — blends from the original normal (0) to the fully spherical normal (1). ![](../../assets/smooth_normal_spherical.webm)
+- **Flatten Up** — squashes the sphere toward a cylinder (less domed). ![](../../assets/smooth_normal_flatten_up.webm)
+- **Push Forward** — biases the normal toward the object's forward axis (more frontal). ![](../../assets/smooth_normal_push_forward.webm)
 - **Mask (RGB)** — optional, per-vertex. **R** scales Spherical, **G** scales Flatten Up, **B** scales Push Forward. Unassigned (white) = every channel at full.
 - **Preview Normals (Scene)** — show smoothed normals in Scene view (cyan). Preview is only shown when the mesh game object is selected.
 	- **Preview Length** — length of the lines.

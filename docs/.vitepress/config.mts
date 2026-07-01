@@ -9,6 +9,23 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
+  // Render Markdown image embeds that point at a video file — ![](clip.webm) — as a <video> player,
+  // so videos are authored with the same ![]() syntax as images (and preview in Obsidian). Relative
+  // paths still resolve/bundle through Vite's asset handling, which covers <video> as well as <img>.
+  markdown: {
+    config: (md) => {
+      const isVideo = /\.(webm|mp4|ogv|mov|m4v)(\?.*)?$/i
+      const fallback =
+        md.renderer.rules.image ||
+        ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+      md.renderer.rules.image = (tokens, idx, options, env, self) => {
+        const src = tokens[idx].attrGet('src') || ''
+        if (!isVideo.test(src)) return fallback(tokens, idx, options, env, self)
+        return `<video src="${md.utils.escapeHtml(src)}" autoplay loop muted playsinline style="max-width:100%"></video>`
+      }
+    }
+  },
+
   // English is the root locale. To add Japanese later, add a `ja` entry here and
   // put its pages under docs/ja/ — no other restructuring needed.
   locales: {
