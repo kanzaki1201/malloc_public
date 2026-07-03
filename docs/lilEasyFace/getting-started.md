@@ -30,6 +30,8 @@ The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/feature
 ## Install
 
 ::: tip Download
+Booth: https://malloc5566.booth.pm/items/8566350
+Gumroad: https://malloc.gumroad.com/l/lileasyface
 :::
 
 1. Import **lilToon** into your project first.
