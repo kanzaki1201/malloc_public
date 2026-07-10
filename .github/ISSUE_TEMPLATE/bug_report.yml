@@ -1,10 +1,19 @@
 name: Bug report
-description: Something in lilEasyFace isn't working as expected.
+description: Something in lilEasyFace or MocapSeitai isn't working as expected.
 labels: [bug]
 body:
   - type: markdown
     attributes:
       value: Thanks for the report! Please fill in the details below so it's reproducible.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - lilEasyFace
+        - MocapSeitai
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
