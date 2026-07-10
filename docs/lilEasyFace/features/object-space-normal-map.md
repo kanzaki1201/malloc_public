@@ -23,7 +23,7 @@ Each row (Left/Up/Forward) holds the (R, G, B) coefficients that build that comp
 The default matches the Blender object-space bake preset. ()
 
 However, the matrix depends on the modelling software you use and the way you orient your model. See below on finding a matrix for your model:
-![](../../assets/finding_axis_matrix.png)
+![](../assets/finding_axis_matrix.png)
 
 
 
