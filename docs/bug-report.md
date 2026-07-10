@@ -1,6 +1,6 @@
 # Report a Bug
 
-Found a bug in lilEasyFace? Please report it on Github in the **malloc_public** repository.
+Found a bug in lilEasyFace or MocapSeitai? Please report it on Github in the **malloc_public** repository — both products share the same issue tracker.
 
 ::: tip Open an issue
 [github.com/kanzaki1201/malloc_public/issues](https://github.com/kanzaki1201/malloc_public/issues/new/choose)
@@ -8,8 +8,9 @@ Found a bug in lilEasyFace? Please report it on Github in the **malloc_public** 
 
 To help reproduce it, include:
 
-- **lilEasyFace version** and **lilToon version**
-- **Unity version** and **render pipeline** (Built-in RP / URP / HDRP)
+- Which product you're using (**lilEasyFace** or **MocapSeitai**) and its version
+- For lilEasyFace: **lilToon version**, **Unity version**, and **render pipeline** (Built-in RP / URP / HDRP)
+- For MocapSeitai: your OS and the mocap source/plugin you're using
 - What you expected vs. what happened
 - Steps to reproduce, and a screenshot if it's visual
 
