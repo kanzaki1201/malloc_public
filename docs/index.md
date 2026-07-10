@@ -2,25 +2,22 @@
 layout: home
 
 hero:
-  name: lilEasyFace
-  text: Easier Anime face shading for lilToon
-  tagline: Toon face shading for lilToon with no manual normal editing and no heavy setup — the face triangle is one simple mask, simpler than an SDF.
+  name: malloc
+  text: Tools and shaders for VTubers and 3D creators
+  tagline: MocapSeitai retargets your mocap so hands land where they should; lilEasyFace makes anime face shading in lilToon painless.
   actions:
     - theme: brand
-      text: Get Started
-      link: /lilEasyFace/getting-started
+      text: MocapSeitai docs
+      link: /MocapSeitai/quickstart
     - theme: alt
-      text: Report a Bug
-      link: /bug-report
+      text: lilEasyFace docs
+      link: /lilEasyFace/getting-started
 
 features:
-  - title: Smooth Vertex Normal
-    details: Runtime-adjustable smooth normals — no manual normal editing needed.
-    link: /lilEasyFace/features/smooth-vertex-normal
-  - title: Easy Face Triangle
-    details: Face triangle light (Rembrandt) from a single 1-channel mask — simpler than an SDF, no manual normal editing.
-    link: /lilEasyFace/features/easy-face-triangle
-  - title: Object-Space Normal Map
-    details: Use a hand-painted object-space normal map directly without conversion.
-    link: /lilEasyFace/features/object-space-normal-map
+  - title: MocapSeitai
+    details: Mocap retargeting middleware — drop it between your tracking app and your renderer. Proportion-aware corrections make hands reach the face, claps meet, and arms stop clipping.
+    link: /MocapSeitai/quickstart
+  - title: lilEasyFace
+    details: lilToon face-shading add-on — smooth toon normals, face-triangle light, and object-space normal maps as material toggles.
+    link: /lilEasyFace/getting-started
 ---

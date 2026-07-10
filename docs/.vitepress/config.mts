@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en-US',
   title: 'malloc',
-  description: "Documentation for malloc's lilToon shaders and tools.",
+  description: "Documentation for malloc's VTuber tools and lilToon shaders.",
   base: '/malloc_public/',
   cleanUrls: true,
   lastUpdated: true,
@@ -34,6 +34,7 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
+      { text: 'MocapSeitai', link: '/MocapSeitai/quickstart', activeMatch: '/MocapSeitai/' },
       { text: 'lilEasyFace', link: '/lilEasyFace/getting-started', activeMatch: '/lilEasyFace/' },
       { text: 'Report a Bug', link: '/bug-report' },
       {
@@ -41,7 +42,8 @@ export default defineConfig({
         items: [
           { text: 'Contact', link: '/contact' },
           { text: 'Credits', link: '/credits' },
-          { text: 'License', link: '/license' }
+          { text: 'MocapSeitai License', link: '/MocapSeitai/license' },
+          { text: 'lilEasyFace License', link: '/lilEasyFace/license' }
         ]
       }
     ],
@@ -49,6 +51,43 @@ export default defineConfig({
     // Per-product sidebars keyed by path. Add another product by dropping in a
     // new `/<product>/` key plus its content folder — nothing else changes.
     sidebar: {
+      '/MocapSeitai/': [
+        {
+          text: 'MocapSeitai',
+          items: [
+            {
+              text: 'Getting Started',
+              collapsed: false,
+              items: [
+                { text: 'Quickstart', link: '/MocapSeitai/quickstart' },
+                { text: 'Common Adjustments', link: '/MocapSeitai/common-adjustments' }
+              ]
+            },
+            {
+              // Reference pages mirror the app panel top-to-bottom, on purpose.
+              text: 'UI Reference',
+              collapsed: false,
+              // Labels use the app's own sentence-case section names on purpose.
+              items: [
+                { text: 'The panel at a glance', link: '/MocapSeitai/reference/' },
+                { text: 'Connections', link: '/MocapSeitai/reference/connections' },
+                { text: 'Loading your model', link: '/MocapSeitai/reference/loading-your-model' },
+                { text: 'Mode & display', link: '/MocapSeitai/reference/mode-and-display' },
+                { text: 'Actor body', link: '/MocapSeitai/reference/actor-body' },
+                { text: 'Smoothing', link: '/MocapSeitai/reference/smoothing' },
+                { text: 'Muscle limits', link: '/MocapSeitai/reference/muscle-limits' },
+                { text: 'Hand position alignment', link: '/MocapSeitai/reference/hand-position-alignment' },
+                { text: 'Hand anti-penetration', link: '/MocapSeitai/reference/hand-anti-penetration' },
+                { text: 'Arm anti-penetration', link: '/MocapSeitai/reference/arm-anti-penetration' },
+                { text: 'Colliders', link: '/MocapSeitai/reference/colliders' }
+              ]
+            },
+            { text: 'Troubleshooting & Diagnostics', link: '/MocapSeitai/troubleshooting' },
+            { text: 'Changelog', link: '/MocapSeitai/changelog' },
+            { text: 'License', link: '/MocapSeitai/license' }
+          ]
+        }
+      ],
       '/lilEasyFace/': [
         {
           text: 'lilEasyFace',
@@ -70,7 +109,8 @@ export default defineConfig({
                 { text: 'Data Baker', link: '/lilEasyFace/features/data-baker' }
               ]
             },
-            { text: 'Changelog', link: '/lilEasyFace/changelog' }
+            { text: 'Changelog', link: '/lilEasyFace/changelog' },
+            { text: 'License', link: '/lilEasyFace/license' }
           ]
         }
       ]
