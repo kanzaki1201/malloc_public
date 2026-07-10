@@ -6,9 +6,9 @@ the surface normal across the character's left/right axis and takes whichever si
 ## Settings
 
 - **Mask (R)** — the red channel controls per-pixel strength. Black = no effect, white = full. 
-- **Strength** — how strongly the symmetric flip is applied. The slider caps at 1 but you can type a higher value to over-drive it. ![](../../assets/easyft_strength.webm)
-- **Fade when Light Below** — fades the effect as the light drops below the horizon. ![](../../assets/easyft_fade_below.webm)
-- **Fade when Light Above** — fades the effect as the light rises above the horizon. ![](../../assets/easyft_fade_above.webm)
+- **Strength** — how strongly the symmetric flip is applied. The slider caps at 1 but you can type a higher value to over-drive it. ![](../assets/easyft_strength.webm)
+- **Fade when Light Below** — fades the effect as the light drops below the horizon. ![](../assets/easyft_fade_below.webm)
+- **Fade when Light Above** — fades the effect as the light rises above the horizon. ![](../assets/easyft_fade_above.webm)
 - **Follow head bone** — see below.
 
 ## Follow head bone
@@ -19,16 +19,16 @@ that tracks the head instead.
 
 This requires baking — run the [Data Baker](./data-baker) and assign the baked mesh to the renderer first.
 
-**No follow head**: ![](../../assets/easyft_no_follow.webm)
+**No follow head**: ![](../assets/easyft_no_follow.webm)
 **Follow head enabled:**
-![](../../assets/easyft_yes_follow.webm)
+![](../assets/easyft_yes_follow.webm)
 
 ## Combine both faders
 Combine both faders to confine the effect to near-horizon light. 
-![](../../assets/easyft_combined.webm)
+![](../assets/easyft_combined.webm)
 
 ## Making a mask
 Just draw the area you want to have Rembrandt light, then blur the edges. (I used Gaussian Blur here.)
-![](../../assets/face_triangle_mask_sample.png)
+![](../assets/face_triangle_mask_sample.png)
 
 You can do it in any image editing software (Krita, Clip Studio Paint, Procreate etc), or 3D modelling software (Blender texture painting, Substance Painter, etc), or even [within Unity](https://booth.pm/en/items/7951475). 

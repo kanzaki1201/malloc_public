@@ -1,6 +1,6 @@
 # Introduction
 
-![](../assets/getting_started.webm)
+![](./assets/getting_started.webm)
 
 **lilEasyFace** is a custom [lilToon](https://lilxyzw.github.io/lilToon/) shader add-on. It takes a few stylized face-shading techniques that normally send you into Blender or a texture-baking pipeline and turns each one into a toggle in the Unity material editor. The name is the point: **easy**.
 
