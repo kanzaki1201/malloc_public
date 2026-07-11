@@ -7,12 +7,15 @@ Foldout between Hand anti-penetration and Colliders, expanded by default.
 ## Settings
 
 - **Enable** master switch. (default on)
-- **(arm swivel mask matrix)** for each arm segment row, choose which body parts to avoid. Rows: L forearm, R forearm, L upper arm, R upper arm. Columns: same nine body-part groups used throughout the app. Defaults: forearms avoid Head + Torso, upper arms avoid Head.
+- **(arm swivel mask matrix)** for each arm segment row, choose which body parts to avoid. (defaults: forearms avoid Head + Torso, upper arms avoid Head)
+  - Rows: L forearm, R forearm, L upper arm, R upper arm. Columns: the nine body-part groups.
 - **Max deviation** maximum angle searched away from the solved arm pose. Raise if an arm still clips; lower to keep corrections subtle. (default 120, range 5 to 120 degrees)
 - **Max speed** maximum change speed for the applied arm angle. 0 = unlimited (instant snap). Set a finite value if the correction popping on/off is distracting. (default 0, range 0 to 720 deg/s)
 - **Upper arm** enables upper-arm anti-penetration. (default on)
 - **Forearm** enables forearm anti-penetration. (default on)
-- **Upper-arm test** how the upper arm is tested against the torso: **Elbow point** checks a single point at the elbow (cheaper, stabler). **Full segment** tests the whole capsule (more thorough). Try both and compare. (default Elbow point)
+- **Upper-arm test** how the upper arm is tested against the torso. Try both and compare. (default Elbow point)
+  - **Elbow point** checks a single point at the elbow (cheaper, stabler).
+  - **Full segment** tests the whole capsule (more thorough).
 - **Upper-arm gap** extra gap outside avoided body parts for the upper-arm stage. Also decides when the correction kicks in. (default 0.015, range 0 to 0.05 m)
 - **Forearm gap** same margin, for the forearm stage. (default 0.015, range 0 to 0.05 m)
 - **Arm anti-pen max candidates** search budget: maximum candidate poses evaluated. Higher tries harder but costs more CPU. Lower if arm correction contributes to frame drops. (default 600, range 50 to 2000)

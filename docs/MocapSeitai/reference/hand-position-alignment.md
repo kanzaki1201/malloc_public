@@ -1,8 +1,8 @@
 # Hand position alignment
 
-Spatial hand placement on top of the rotation from retargeting. Raw transfer gets joint angles right but not necessarily contact points: hands on a chibi character will miss the face because the arm is shorter. This section blends in a body-anchored spatial target, pins it with IK, and for claps/heart-hands, pulls the two hands to a consistent distance apart. Foldout expanded by default. Tuning saves per-avatar in the map.
+Spatial hand placement on top of the rotation from retargeting. Raw transfer gets joint angles right but not necessarily contact points: hands on a chibi character will miss the face because the arm is shorter.
 
-Runs in both Muscle and Offset transfer modes.
+This section blends in a body-anchored spatial target, pins it with IK, and pulls the two hands to a consistent distance for claps and heart-hands. Runs in both transfer modes. Tuning saves per-avatar in the map.
 
 ## Settings
 

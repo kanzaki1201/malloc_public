@@ -4,7 +4,9 @@ The performer's real-world proportions. The correction pipeline uses these to pl
 
 ## Proportions
 
-- **Proportions** chooses where body measurements come from. **Tracker skeleton** trusts the proportions your tracking app reports. **My body** uses the measurements you enter below. Pick My body when the tracker's skeleton is inaccurate (common with mocopi and webcam trackers). (default Tracker skeleton)
+- **Proportions** chooses where body measurements come from. (default Tracker skeleton)
+  - **Tracker skeleton** trusts the proportions your tracking app reports.
+  - **My body** uses the measurements you enter below. Pick this when the tracker's skeleton is inaccurate (common with mocopi and webcam trackers).
 
 ::: tip
 Height, Arm span, and the Detailed foldout below are only editable when Proportions is set to My body.

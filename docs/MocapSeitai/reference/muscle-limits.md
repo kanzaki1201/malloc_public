@@ -4,9 +4,9 @@ Joint-range clamping and per-avatar pose offsets. This is the only main-panel se
 
 ## Settings
 
-- **Adjust muscles** opens the muscle range editor side panel (documented below). Opening it closes the collider editor if open (the two side panels are mutually exclusive).
+- **Adjust muscles** opens the muscle range editor side panel (documented below). Closes the collider editor if open.
 - **Enable** keeps each joint inside its allowed range. Applied after transfer and after arm correction. (default on)
-- **Tightness** scales all muscle ranges around their centers. 1 uses configured ranges as-is; 0 freezes every joint at center. Shared with the muscle editor panel's Tightness slider. (default 1, range 0 to 1)
+- **Tightness** scales all muscle ranges around their centers. 1 uses configured ranges as-is; 0 freezes every joint at center. (default 1, range 0 to 1)
 - **Forearm twist share** moves part of the hand's twist rotation onto the forearm while preserving the hand's world rotation. (default 0.35, range 0 to 1)
 
 <!-- CAPTURE: Muscle limits section expanded, toggling Enable off and on with an arm pushed past its natural range — show the joint popping out of clamp when Enable is off vs held in range when on. ~10s -->

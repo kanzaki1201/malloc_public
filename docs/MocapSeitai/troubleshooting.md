@@ -12,11 +12,13 @@ The [Status](/MocapSeitai/reference/connections) line shows `Messages/s: 0` afte
 
 ### Settings aren't saving
 
-Changes reset every launch.
+Changes reset every launch:
 
-::: warning
-This happens when MocapSeitai is run from inside the ZIP's preview/temp-extraction view. Extract the whole ZIP to a normal folder first.
-:::
+- This happens when MocapSeitai is run from inside the ZIP's preview/temp-extraction view. Extract the whole ZIP to a normal folder first.
+
+Per-avatar tuning (colliders, muscle limits, corrections) is not part of app settings:
+
+- Save it with **Save map...** in [Load model](/MocapSeitai/reference/loading-your-model), and load the map next time.
 
 ### "Windows protected your PC" (SmartScreen)
 
@@ -24,7 +26,8 @@ The build is unsigned, so SmartScreen flags it on first launch. Click **More inf
 
 ### Motion looks wrong in the receiver
 
-Load the **same** VRM file in the receiver as in MocapSeitai. MocapSeitai retargets using the proportions of the VRM you loaded into it. A different VRM in the receiver means the corrections were computed for the wrong body.
+- Load the **same** VRM file in the receiver as in MocapSeitai. Corrections are computed for the model MocapSeitai has loaded.
+- Press **Realign Actor Rig** and **Realign Character Rig** (see [Loading your model](/MocapSeitai/reference/loading-your-model)).
 
 ### Hands/arms clip the body, or claps don't meet
 
