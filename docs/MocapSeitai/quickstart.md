@@ -32,7 +32,9 @@ Everything runs on one PC.
 
 1. Run the MocapSeitai executable.
 2. Load your avatar: click **Open model…** in the **Load model** section and pick your VRM file.
-3. Set up the input. The default **Input mode** is **VMC**: in your tracking app, set VMC output to this PC on port **39539** (matches MocapSeitai's default **Listen port**). For **mocopi** or **Rokoko**, switch **Input mode** accordingly and point the sender at the port shown (mocopi default **12351**, Rokoko default **14043**). See [Connections](/MocapSeitai/reference/connections) for details.
+3. Set up the input:
+   - **VMC** (the default **Input mode**): in your tracking app, set VMC output to this PC on port **39539** (matches MocapSeitai's default **Listen port**).
+   - **mocopi** / **Rokoko**: switch **Input mode** accordingly and point the sender at the port shown (mocopi default **12351**, Rokoko default **14043**). See [Connections](/MocapSeitai/reference/connections) for details.
 4. In the **Output** section, leave **Send address** at `127.0.0.1` for same-PC setups. Set **Send port** to match your receiver app's listen port (default **39540**).
 5. Press **Start**.
 6. Check the **Status** section: **Messages/s** should be counting up. If it stays at 0, see [Troubleshooting](/MocapSeitai/troubleshooting).

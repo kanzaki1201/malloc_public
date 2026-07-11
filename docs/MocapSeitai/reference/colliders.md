@@ -29,7 +29,7 @@ The nine per-part toggles below are overlay display filters only. They control w
 
 Click **Adjust colliders** to open. Clicking a capsule in the 3D viewport selects it, same as picking from the list.
 
-- **Group** filters the collider list by body region: All, Head, Torso, Legs, Left hand, Right hand, Left forearm, Right forearm, Left upper arm, Right upper arm. Changing it clears the selection. Clicking a collider outside the current filter auto-clears the filter. (default All)
+- **Group** filters the collider list by body region. Changing it clears the selection. (default All)
 
 Once you select a collider, shape controls appear:
 
@@ -40,7 +40,7 @@ Once you select a collider, shape controls appear:
 - **Center X / Y / Z** local offset from the bone. (default per collider, range -0.3 to 0.3)
 - **Rotation X / Y / Z** local Euler rotation. (default per collider, range 0 to 360 deg)
 - **Enabled** enable/disable the selected collider without touching its shape. (default per collider)
-- **Mirror** copies the shape to its left/right counterpart (`L`/`R`, `.L`/`.R`, `_L`/`_R` naming). Shows a status message if no match is found.
+- **Mirror** copies the shape to its left/right counterpart. Fix one side, mirror to the other.
 
 At the bottom:
 

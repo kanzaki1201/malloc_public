@@ -22,7 +22,7 @@ Foldout, expanded by default. Only fields for the current **Input mode** are sho
 - **mocopi port** match to the mocopi app's target port. (default 12351, mocopi mode only)
 - **Rokoko port** match to Rokoko Studio's target port. (default 14043, Rokoko mode only)
 - **Actor name** Rokoko Studio actor to follow. Leave empty for the first actor. (Rokoko mode only)
-- **Forward VMC blendshapes** in mocopi/Rokoko mode, body motion comes from the SDK stream, but face blendshapes can still arrive over VMC on the listen port. Turn this on to forward them alongside the body stream. (default on, mocopi/Rokoko mode only)
+- **Forward VMC blendshapes** forwards face blendshapes arriving over VMC on the listen port, alongside the SDK body stream. (default on, mocopi/Rokoko mode only)
 - **(port-unavailable hint)** warning shown when the listen port failed to bind. Close whatever else is using the port and restart MocapSeitai.
 
 <!-- CAPTURE: switch Input mode from VMC to mocopi to Rokoko in turn, showing the port/Actor name/Forward VMC blendshapes fields appear and disappear each time; ~15s -->
