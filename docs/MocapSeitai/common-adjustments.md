@@ -4,8 +4,9 @@ Quick fixes for common problems you can see on screen. For full control descript
 
 ## Pick your transfer mode
 
-- Accurate source (optical, suit): set **Transfer mode** to `Offset`, leave **Proportions** on `Tracker skeleton`.
-- Consumer source (mocopi, webcam): use `Muscle`, leave **Proportions** on `Tracker skeleton`. If motion feels off, switch to `My body` and enter your real height and arm span.
+Both modes work with any input. `Offset` directly copies bone rotations through the T-pose offset, so it preserves precise input well. `Muscle` converts through Unity's muscle space and tends to handle noisy or consumer-grade input better. Try both and see which looks better for your setup.
+
+If using `My body` proportions (under [Actor body](/MocapSeitai/reference/actor-body)), enter your real height and arm span so spatial corrections land in the right place.
 
 See [Smoothing](/MocapSeitai/reference/smoothing) and [Actor body](/MocapSeitai/reference/actor-body).
 
@@ -35,7 +36,7 @@ Check **Squat body-scale correction** is on in [Smoothing](/MocapSeitai/referenc
 
 ## Motion is jittery or laggy
 
-Change the **Smoothing** preset in [Smoothing](/MocapSeitai/reference/smoothing). Use `Off` if your receiver app already smooths.
+Try a different **Smoothing** preset in [Smoothing](/MocapSeitai/reference/smoothing). `Low latency` follows faster with some jitter, `Smooth` filters harder with more lag, `Balanced` sits between.
 
 ::: tip
 Happy with the result? Click **Save map...** in Load model so the whole setup rides with your avatar as one JSON file. See [Loading your model](/MocapSeitai/reference/loading-your-model).
