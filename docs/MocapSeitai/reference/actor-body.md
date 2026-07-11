@@ -25,9 +25,15 @@ Collapsed sub-foldout with five finer measurements. Leave any at `0` and MocapSe
 - **Knee height (m)** (default 0, derived from leg proportions)
 - **Forearm length (m)** fingertip-to-elbow (forearm + hand). Only splits the arm at the elbow; does not change total arm length. (default 0)
 
-## Realigning after a change
+## Realign & reset
 
-Changing any Actor body value while the loop is running shows a **Body settings changed** notice. Click **Realign actor rig** (in the row above Input, see [the panel at a glance](/MocapSeitai/reference/)) to rebuild from the current values and clear the notice. No need to stop and restart.
+Two always-visible button rows between Status and Input.
+
+- **Realign actor rig** rebuilds the actor rig from the incoming skeleton. Press after changing any Actor body value while the loop is running. Also clears the "Body settings changed" warning.
+- **Realign character rig** rebuilds the character pipeline without reloading the VRM.
+- **Reset settings** returns every tuning knob to factory defaults. Does not touch collider edits (those are per-avatar in the map).
+
+Changing any Actor body value while the loop is running shows a **Body settings changed** notice. Click **Realign actor rig** to clear it. No need to stop and restart.
 
 <!-- CAPTURE: switch Proportions from Tracker skeleton to My body while the loop is running, enter Height ~1.7 and watch Arm span follow, open Detailed, then click Realign actor rig to clear the stale-calibration notice — about 20s -->
 *(media pending)*
