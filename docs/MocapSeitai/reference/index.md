@@ -1,59 +1,59 @@
 # The panel at a glance
 
-MocapSeitai's whole workflow lives in one scrollable panel: connect your tracking app, load your VRM, and tune how the correction pipeline retargets motion onto it. This page is a map of that panel, top to bottom, plus the odds and ends that don't have a reference page of their own.
+MocapSeitai's workflow lives in one scrollable panel. This page maps the panel top to bottom, plus odds and ends without their own reference page.
 
 <!-- CAPTURE: full annotated screenshot of the main panel, scrolled to show every section header (Status through Diagnostics), with callout labels pointing at each section name; static image -->
 *(media pending)*
 
-## Walking down the panel
+## Panel sections
 
-- **Status** — live readout of the receive-correct-send loop, refreshed every 0.25 s. Covered on [Connections](/MocapSeitai/reference/connections).
-- **Realign & reset rows** — always-visible action buttons; documented below.
-- **Input** — pick your mocap source (VMC, mocopi, Rokoko) and its listen port. See [Connections](/MocapSeitai/reference/connections).
-- **Output** — where the corrected VMC stream is sent. See [Connections](/MocapSeitai/reference/connections).
-- **Start / Stop row** — run control for the loop. See [Connections](/MocapSeitai/reference/connections).
-- **Load model** — load your VRM and save/load its per-avatar map. See [Loading your model](/MocapSeitai/reference/loading-your-model).
-- **Mode & display** — comparison ghost/twin view and skeleton overlays. See [Mode & display](/MocapSeitai/reference/mode-and-display).
-- **Actor body** — the performer's real-world proportions. See [Actor body](/MocapSeitai/reference/actor-body).
-- **Smoothing** — transfer mode, bone smoothing presets, and squat body-scale correction. See [Smoothing](/MocapSeitai/reference/smoothing).
-- **Muscle limits** — joint-range clamping, retarget offsets, and the muscle editor. Collapsed by default. See [Muscle limits](/MocapSeitai/reference/muscle-limits).
-- **Hand position alignment** — spatial hand placement, IK pinning, hand contact. See [Hand position alignment](/MocapSeitai/reference/hand-position-alignment).
-- **Hand anti-penetration** — keeps hand targets out of the body. See [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration).
-- **Arm anti-penetration** — keeps upper arms and forearms out of the body. See [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration).
-- **Colliders** — the collision shapes everything above tests against, plus the collider editor. See [Colliders](/MocapSeitai/reference/colliders).
-- **Diagnostics** — copy a bug-report snippet or open the log folder. Bottom of the panel.
+- **Status** live readout of the loop, refreshed every 0.25 s. See [Connections](/MocapSeitai/reference/connections).
+- **Realign & reset rows** always-visible action buttons (documented below).
+- **Input** mocap source and listen port. See [Connections](/MocapSeitai/reference/connections).
+- **Output** where the corrected VMC stream goes. See [Connections](/MocapSeitai/reference/connections).
+- **Start / Stop row** run control. See [Connections](/MocapSeitai/reference/connections).
+- **Load model** load your VRM and save/load per-avatar maps. See [Loading your model](/MocapSeitai/reference/loading-your-model).
+- **Mode & display** comparison view and skeleton overlays. See [Mode & display](/MocapSeitai/reference/mode-and-display).
+- **Actor body** performer's real-world proportions. See [Actor body](/MocapSeitai/reference/actor-body).
+- **Smoothing** transfer mode, bone smoothing, squat correction. See [Smoothing](/MocapSeitai/reference/smoothing).
+- **Muscle limits** joint-range clamping, retarget offsets, muscle editor. Collapsed by default. See [Muscle limits](/MocapSeitai/reference/muscle-limits).
+- **Hand position alignment** spatial hand placement, IK pinning, hand contact. See [Hand position alignment](/MocapSeitai/reference/hand-position-alignment).
+- **Hand anti-penetration** keeps hand targets out of the body. See [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration).
+- **Arm anti-penetration** keeps upper arms and forearms out of the body. See [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration).
+- **Colliders** collision shapes and the collider editor. See [Colliders](/MocapSeitai/reference/colliders).
+- **Diagnostics** copy a bug-report snippet or open the log folder.
 
 ## Header
 
-- **VMC Seitai** — the panel title. Note: MocapSeitai was formerly named VMC Seitai; a 0.9.x beta panel may still show the old title.
-- **Language** — unlabeled dropdown, choices **English** / **日本語**. Changing it saves your settings and fully rebuilds the panel — every label and tooltip in the UI localizes through this. (default English)
-- **(version)** — read-only label showing the installed app version.
-- **(panel resize handle)** — a thin strip at the bottom edge of the panel column. Drag it to resize the panel's width, clamped between 300 and 620 px; the new width is saved when you release. (default 360 px)
+- **VMC Seitai** panel title.
+- **Language** unlabeled dropdown: **English** / **日本語**. Changing it saves settings and rebuilds the panel. (default English)
+- **(version)** read-only label showing the installed version.
+- **(panel resize handle)** thin strip at the bottom edge. Drag to resize width (300 to 620 px, saved on release, default 360 px).
 
 ## Realign & reset rows
 
-Two always-visible button rows sitting between Status and Input.
+Two always-visible button rows between Status and Input.
 
-- **Realign actor rig** — rebuilds the actor rig from the incoming skeleton. Press this after changing any [Actor body](/MocapSeitai/reference/actor-body) value while the loop is running — it also clears the "Body settings changed" warning.
-- **Realign character rig** — rebuilds the character pipeline without reloading the VRM.
-- **Body settings changed — realign actor rig** — a warning label, hidden by default. It appears only when an Actor body value changed while the loop was running, and clears once you press Realign actor rig or switch input mode.
-- **Reset settings** — returns every tuning knob to factory defaults. Collider adjustments are kept.
+- **Realign actor rig** rebuilds the actor rig from the incoming skeleton. Press after changing any [Actor body](/MocapSeitai/reference/actor-body) value while the loop is running. Also clears the "Body settings changed" warning.
+- **Realign character rig** rebuilds the character pipeline without reloading the VRM.
+- **Body settings changed** warning label. Hidden by default. Appears when an Actor body value changed while the loop was running. Clears once you press Realign actor rig or switch input mode.
+- **Reset settings** returns every tuning knob to factory defaults. Collider adjustments are kept.
 
 ::: warning
-Reset settings rebuilds the panel and also resets the collider overlay filter. It does not touch your collider edits — those live in the per-avatar map, not app settings.
+Reset settings rebuilds the panel and resets the collider overlay filter. It does not touch collider edits (those live in the per-avatar map, not app settings).
 :::
 
 <!-- CAPTURE: change an Actor body value while the loop is running so the "Body settings changed" warning appears, then press Realign actor rig and show the warning clear; ~10s -->
 *(media pending)*
 
+## General notes
+
+Settings save automatically about a second after you change them. Correction tuning and collider edits are per-avatar and persist through the map file ([Load model](/MocapSeitai/reference/loading-your-model)).
+
+The collider editor and muscle editor side panels are mutually exclusive; opening one closes the other.
+
+Hovering any control shows a tooltip explaining what it does.
+
 ::: info
-A handful of controls scattered through the panel are labeled in raw code-style camelCase — **pinHands**, **boneFilterMinCutoff**, and a few others. These are deliberately-raw advanced knobs; their defaults are sensible, so touch them last, once the friendlier controls above them aren't getting you the rest of the way.
+A few controls are labeled in raw camelCase (e.g. **pinHands**, **boneFilterMinCutoff**). These are advanced knobs with sensible defaults; touch them last.
 :::
-
-## A few things that apply everywhere
-
-Settings save automatically, about a second after you change them — there's no separate save button for the app-wide settings. Correction tuning and collider edits are different: they persist per-avatar through a map file, loaded and saved from the [Load model](/MocapSeitai/reference/loading-your-model) section.
-
-The two side panels — the collider editor and the muscle editor — are mutually exclusive; opening one closes the other.
-
-Hovering any control for a moment shows a tooltip explaining what it does, if the label alone isn't enough.
