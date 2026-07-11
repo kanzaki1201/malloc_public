@@ -28,11 +28,11 @@ Get MocapSeitai on Booth. <!-- VERIFY: Booth item URL -->
 
 ## First run
 
-These steps use VMC input (the default). Everything runs on one PC.
+Everything runs on one PC.
 
 1. Run the MocapSeitai executable.
 2. Load your avatar: click **Open model…** in the **Load model** section and pick your VRM file.
-3. In your tracking app, set VMC output to this PC on port **39539** (matches MocapSeitai's default **Listen port**).
+3. Set up the input. The default **Input mode** is **VMC**: in your tracking app, set VMC output to this PC on port **39539** (matches MocapSeitai's default **Listen port**). For **mocopi** or **Rokoko**, switch **Input mode** accordingly and point the sender at the port shown (mocopi default **12351**, Rokoko default **14043**). See [Connections](/MocapSeitai/reference/connections) for details.
 4. In the **Output** section, leave **Send address** at `127.0.0.1` for same-PC setups. Set **Send port** to match your receiver app's listen port (default **39540**).
 5. Press **Start**.
 6. Check the **Status** section: **Messages/s** should be counting up. If it stays at 0, see [Troubleshooting](/MocapSeitai/troubleshooting).
@@ -46,10 +46,6 @@ Your avatar should now be moving with corrections applied.
 ::: warning Load the same VRM in your receiver
 MocapSeitai sends bone data for the model it has loaded. Load the exact same VRM in your receiver app, or the corrected proportions won't match.
 :::
-
-### mocopi or Rokoko input
-
-If your source is Sony mocopi or Rokoko Studio Live, switch **Input mode** from **VMC** to **mocopi** or **Rokoko**. The matching port field appears (mocopi default **12351**, Rokoko default **14043**). Point the sender at this PC on that port. Details on blendshape forwarding are on the [Connections](/MocapSeitai/reference/connections) page.
 
 <!-- CAPTURE: short clip — Comparison dropdown switched Off → Ghost → Side by side while motion is running; ghost overlay visibly diverges from the corrected model on a face-touch. ~8 s. -->
 *(media pending)*
