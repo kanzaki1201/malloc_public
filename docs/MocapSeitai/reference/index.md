@@ -8,7 +8,7 @@ MocapSeitai's workflow lives in one scrollable panel. This page maps the section
 ## Panel sections
 
 - **Status** live readout of the loop. See [Connections](/MocapSeitai/reference/connections).
-- **Realign & reset** always-visible action buttons. See [Actor body](/MocapSeitai/reference/actor-body).
+- **Realign & reset** always-visible action buttons. See [Loading your model](/MocapSeitai/reference/loading-your-model).
 - **Input** mocap source and listen port. See [Connections](/MocapSeitai/reference/connections).
 - **Output** where the corrected VMC stream goes. See [Connections](/MocapSeitai/reference/connections).
 - **Start / Stop** run control. See [Connections](/MocapSeitai/reference/connections).
@@ -23,12 +23,3 @@ MocapSeitai's workflow lives in one scrollable panel. This page maps the section
 - **Colliders** collision shapes and the collider editor. See [Colliders](/MocapSeitai/reference/colliders).
 - **Diagnostics** copy a bug-report snippet or open the log folder.
 
-## General notes
-
-The panel header has a **Language** dropdown (English / 日本語) that rebuilds the whole UI when changed.
-
-Settings save automatically about a second after you change them. Correction tuning and collider edits are per-avatar and persist through the map file ([Load model](/MocapSeitai/reference/loading-your-model)).
-
-The collider editor and muscle editor side panels are mutually exclusive; opening one closes the other.
-
-A few controls are labeled in raw camelCase (e.g. **pinHands**, **boneFilterMinCutoff**). These are advanced knobs with sensible defaults.

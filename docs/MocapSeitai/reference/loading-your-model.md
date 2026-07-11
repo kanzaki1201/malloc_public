@@ -15,6 +15,16 @@ Keep one map per avatar. The map bundles collider edits, correction tuning, and 
 
 The default save location (next to the VRM, named `<avatar>.map.json`) means the map travels with the model. You can save it anywhere or rename it for multiple tuning variants.
 
+## Realign & reset
+
+Two always-visible button rows near the top of the panel, between Status and Input.
+
+- **Realign Actor Rig** rebuilds the actor rig from the incoming skeleton.
+- **Realign Character Rig** rebuilds the character pipeline without reloading the VRM.
+- **Reset settings** returns every tuning knob to factory defaults. Does not touch collider edits (those are per-avatar in the map).
+
+Press both realign buttons after changing [Actor body](/MocapSeitai/reference/actor-body) values or switching tracking source.
+
 <!-- CAPTURE: Load model section — click Open model…, pick a VRM file in the OS picker, show the model loading in the viewport and the Title/Author card populating. ~10s -->
 *(media pending)*
 

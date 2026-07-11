@@ -36,7 +36,7 @@ Check **Squat body-scale correction** in [Smoothing](/MocapSeitai/reference/smoo
 
 ### "Body settings changed" warning
 
-You changed an Actor body value while the loop was running. Press **Realign actor rig** (see [Actor body](/MocapSeitai/reference/actor-body)). The warning clears once you do.
+You changed an Actor body value while the loop was running. Press **Realign Actor Rig** and **Realign Character Rig** (see [Loading your model](/MocapSeitai/reference/loading-your-model)). The warning clears once you do.
 
 ## Diagnostics
 
