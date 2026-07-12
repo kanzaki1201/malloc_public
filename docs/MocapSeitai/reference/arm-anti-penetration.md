@@ -2,8 +2,6 @@
 
 Correction for the upper arm and forearm. [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration) keeps the hand target out of the body, but the arm behind it can still clip through the torso or head on a stocky character. This section searches over the arm's muscle-space degrees of freedom to relax the segment away from a collision while keeping the hand where it landed.
 
-Foldout between Hand anti-penetration and Colliders, expanded by default.
-
 ## Settings
 
 - **Enable** master switch. (default on)

@@ -1,6 +1,6 @@
 # Smoothing
 
-Transfer mode and bone smoothing. Set these once per setup, come back if the motion looks jittery or laggy. Foldout between Actor body and Muscle limits, expanded by default.
+Transfer mode and bone smoothing. Set these once per setup, come back if the motion looks jittery or laggy.
 
 ## Settings
 
@@ -19,7 +19,7 @@ Transfer mode and bone smoothing. Set these once per setup, come back if the mot
   :::
 
 - **Squat body-scale correction** scales hip translation by body proportion so squat depth matches. Without it, a chibi character can sink through the floor or float when you squat. (default on)
-- **Filter details** collapsed sub-foldout with the raw One-Euro filter parameters behind the Smoothing preset. Editing any of these flips the dropdown to Custom.
+- **Filter details** the raw One-Euro filter parameters behind the Smoothing preset. Editing any of these flips the preset to Custom.
   - **boneFilterMinCutoff** minimum cutoff. Lower is smoother but laggier. (default 1, range 0 to 10)
   - **boneFilterBeta** responsiveness to fast motion. Higher follows faster motion more closely. (default 0.5, range 0 to 5)
   - **boneFilterDCutoff** cutoff for the filter's speed signal. Rarely needs changing. (default 1, range 0.01 to 10)

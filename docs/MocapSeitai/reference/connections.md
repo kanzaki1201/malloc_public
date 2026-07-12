@@ -4,8 +4,6 @@ Where motion comes from and where the corrected result goes. Set this once when 
 
 ## Status
 
-Top of the panel, refreshes every 0.25 s.
-
 - **(status line)** reads `<LoopState> / <Status>`, whether the loop is running and what state it's in.
 - **(counters line)** reads `Messages/s: N   Addresses: N   Send drops: N`, live count of incoming traffic, distinct addresses, and outgoing drops.
 
@@ -15,7 +13,7 @@ If **Messages/s** stays at 0 after pressing Start, the loop isn't receiving anyt
 
 ## Input
 
-Foldout, expanded by default. Only fields for the current **Input mode** are shown.
+Only fields for the current **Input mode** are shown.
 
 - **Input mode** selects the input source: **VMC**, **mocopi**, or **Rokoko**. (default VMC)
 - **Listen port** UDP port for VMC input. (default 39539, VMC mode only)
@@ -30,8 +28,6 @@ Foldout, expanded by default. Only fields for the current **Input mode** are sho
 
 ## Output
 
-Foldout, expanded by default.
-
 - **Send address** IP address for the corrected VMC stream. Use `127.0.0.1` for same-PC setups. (default 127.0.0.1)
 - **Send port** must match the receiving app's listen port. (default 39540)
 
@@ -39,9 +35,7 @@ Foldout, expanded by default.
 Load the same VRM in the receiver as in MocapSeitai. A mismatched avatar will fight the corrections. See [Loading your model](/MocapSeitai/reference/loading-your-model).
 :::
 
-## Start / Stop row
-
-Always-visible button row between Output and Load model.
+## Start / Stop
 
 - **Start** starts receiving and correcting.
 - **Stop** stops the loop and holds the last pose (character freezes in place rather than snapping to a default pose).

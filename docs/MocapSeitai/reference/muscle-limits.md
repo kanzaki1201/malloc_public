@@ -1,6 +1,6 @@
 # Muscle limits
 
-Joint-range clamping and per-avatar pose offsets. This is the only main-panel section collapsed by default. Only applies in **Muscle** transfer mode; switching to Offset (see [Smoothing](/MocapSeitai/reference/smoothing)) greys out this section and the muscle editor panel.
+Joint-range clamping and per-avatar pose offsets. Only applies in **Muscle** transfer mode; switching to Offset (see [Smoothing](/MocapSeitai/reference/smoothing)) greys out this section and the muscle editor panel.
 
 ## Settings
 
@@ -14,7 +14,7 @@ Joint-range clamping and per-avatar pose offsets. This is the only main-panel se
 
 ### Retarget offsets
 
-Collapsed sub-foldout with six sliders (all -30 to +30 degrees, default 0). Small constant offsets applied to the retargeted pose, mirrored left/right. Use these to calibrate posture per avatar.
+Small constant offsets applied to the retargeted pose, mirrored left/right. Use these to calibrate posture per avatar. All default 0, range -30 to +30 degrees.
 
 - **Arm spread** how far arms sit from the torso.
 - **Arm preroll** arm twist around its long axis before the rest of the pipeline.
@@ -30,8 +30,6 @@ Retarget offsets fix a consistent posture mismatch on one avatar (e.g. rest pose
 <!-- CAPTURE: Retarget offsets sub-foldout expanded, dragging Arm spread and Shoulder height sliders with a character on screen — show the visible posture shift. ~10s -->
 *(media pending)*
 
-Below the Retarget offsets sub-foldout:
-
 - **fingerDirectCopy** copies finger rotations directly from the actor, bypassing the muscle pipeline. (default on)
 
 ## Muscle limits (editor side panel)
@@ -43,9 +41,7 @@ Click **Adjust muscles** to open. Mutually exclusive with the collider editor pa
 - **Legs** multiplier for leg muscles. (default 1, range 0 to 1)
 - **Torso** multiplier for torso, neck, head, eye, and jaw muscles. (default 1, range 0 to 1)
 
-Below the group multipliers are four foldouts listing individual muscles: **Arms**, **Legs**, **Torso** (expanded by default), and **Fingers** (collapsed by default).
-
-Each row is labeled with the raw Unity muscle name (English only) and has a **Min** / **Max** slider pair (range -1 to 1). These define the muscle's allowed range before Tightness and group multipliers scale it.
+Individual muscles are grouped under **Arms**, **Legs**, **Torso**, and **Fingers**. Each is labeled with the raw Unity muscle name (English only) and has a **Min** / **Max** pair (range -1 to 1) defining its allowed range before Tightness and group multipliers scale it.
 
 ::: warning
 Dragging Max below Min (or vice versa) auto-swaps them so Min never exceeds Max.
