@@ -1,6 +1,6 @@
 # Actor body
 
-The performer's real-world proportions. The correction pipeline uses these to place hands and feet in the right physical spot, so claps meet and hands land on the face even when your body and avatar are shaped differently. Foldout in the main panel, expanded by default.
+The performer's real-world proportions. The correction pipeline uses these to place hands and feet in the right physical spot, so claps meet and hands land on the face even when your body and avatar are shaped differently.
 
 ## Proportions
 
@@ -9,7 +9,7 @@ The performer's real-world proportions. The correction pipeline uses these to pl
   - **My body** uses the measurements you enter below. Pick this when the tracker's skeleton is inaccurate (common with mocopi and webcam trackers).
 
 ::: tip
-Height, Arm span, and the Detailed foldout below are only editable when Proportions is set to My body.
+Height, Arm span, and Detailed are only editable when Proportions is set to My body.
 :::
 
 ## Height and arm span
@@ -19,7 +19,7 @@ Height, Arm span, and the Detailed foldout below are only editable when Proporti
 
 ## Detailed
 
-Collapsed sub-foldout with five finer measurements. Leave any at `0` and MocapSeitai derives it from Height (or leg proportions for Knee height). Only fill one in if the automatic estimate is off for your build.
+Five finer measurements. Leave any at `0` and MocapSeitai derives it from Height (or leg proportions for Knee height). Only fill one in if the automatic estimate is off for your build.
 
 - **Shoulder width (m)** (default 0, derived from height)
 - **Hip height (m)** (default 0, derived from height)

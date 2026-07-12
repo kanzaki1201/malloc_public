@@ -1,6 +1,6 @@
 # Mode & display
 
-Visual aids and comparison view for seeing what the correction pipeline is doing. Foldout in the main panel, expanded by default, between Load model and Actor body.
+Visual aids and comparison view for seeing what the correction pipeline is doing.
 
 ## Settings
 

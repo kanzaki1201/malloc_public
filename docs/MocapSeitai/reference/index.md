@@ -8,7 +8,7 @@ MocapSeitai's workflow lives in one scrollable panel. This page maps the section
 ## Panel sections
 
 - **Status** live readout of the loop. See [Connections](/MocapSeitai/reference/connections).
-- **Realign & reset** always-visible action buttons. See [Loading your model](/MocapSeitai/reference/loading-your-model).
+- **Realign & reset** action buttons. See [Loading your model](/MocapSeitai/reference/loading-your-model).
 - **Input** mocap source and listen port. See [Connections](/MocapSeitai/reference/connections).
 - **Output** where the corrected VMC stream goes. See [Connections](/MocapSeitai/reference/connections).
 - **Start / Stop** run control. See [Connections](/MocapSeitai/reference/connections).
@@ -16,7 +16,7 @@ MocapSeitai's workflow lives in one scrollable panel. This page maps the section
 - **Mode & display** comparison view and skeleton overlays. See [Mode & display](/MocapSeitai/reference/mode-and-display).
 - **Actor body** performer's real-world proportions. See [Actor body](/MocapSeitai/reference/actor-body).
 - **Smoothing** transfer mode, bone smoothing, squat correction. See [Smoothing](/MocapSeitai/reference/smoothing).
-- **Muscle limits** joint-range clamping, retarget offsets, muscle editor. Collapsed by default. See [Muscle limits](/MocapSeitai/reference/muscle-limits).
+- **Muscle limits** joint-range clamping, retarget offsets, muscle editor. See [Muscle limits](/MocapSeitai/reference/muscle-limits).
 - **Hand position alignment** spatial hand placement, IK pinning, hand contact. See [Hand position alignment](/MocapSeitai/reference/hand-position-alignment).
 - **Hand anti-penetration** keeps hand targets out of the body. See [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration).
 - **Arm anti-penetration** keeps upper arms and forearms out of the body. See [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration).
