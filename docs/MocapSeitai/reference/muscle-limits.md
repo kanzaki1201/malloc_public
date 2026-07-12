@@ -14,12 +14,12 @@ Joint-range clamping and per-avatar pose offsets. Only applies in **Muscle** tra
 
 ### Retarget offsets
 
-Small constant offsets applied to the retargeted pose, mirrored left/right. Use these to calibrate posture per avatar. All default 0, range -30 to +30 degrees.
+Small constant offsets applied to the retargeted pose, mirrored left/right. Use these to calibrate posture per avatar. All default 0, range -60 to +60 degrees.
 
-- **Arm spread** how far arms sit from the torso.
-- **Arm preroll** arm twist around its long axis before the rest of the pipeline.
-- **Elbow spread** how far elbows point outward.
-- **Leg spread** how far apart the legs sit.
+- **Upper-arm spread** how far arms sit from the torso.
+- **Forearm preroll** twists the forearm around its long axis.
+- **Upper-arm twist** twists the upper arm around its long axis; this is what reads as elbow spread.
+- **Upper-leg spread** how far apart the legs sit.
 - **Shoulder height** shoulder height offset.
 - **Shoulder shift** shoulder position sideways.
 
@@ -27,7 +27,7 @@ Small constant offsets applied to the retargeted pose, mirrored left/right. Use 
 Retarget offsets fix a consistent posture mismatch on one avatar (e.g. rest pose arms too close to the body). Save the result to that avatar's map.
 :::
 
-<!-- CAPTURE: Retarget offsets sub-foldout expanded, dragging Arm spread and Shoulder height sliders with a character on screen — show the visible posture shift. ~10s -->
+<!-- CAPTURE: Retarget offsets sub-foldout expanded, dragging Upper-arm spread and Shoulder height sliders with a character on screen — show the visible posture shift. ~10s -->
 *(media pending)*
 
 - **fingerDirectCopy** copies finger rotations directly from the actor, bypassing the muscle pipeline. (default on)

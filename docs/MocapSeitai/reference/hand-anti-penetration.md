@@ -8,14 +8,14 @@ Runs in both Muscle and Offset transfer modes.
 
 ## Settings
 
-- **Enable** master switch for the hand contact barrier. (default on)
-- **Gap** extra clearance from the collider surface, on top of the collider's own radius. Raise if a hand still grazes the body; lower if hands stop too far away. (default 0.03, range 0.001 to 0.05 m)
-- **Max release speed** how fast a hand catches up to its real target once the barrier lets go. 0 = instant snap. Raise to ease the hand back instead of popping. (default 0, range 0 to 8)
+- **Enable** master switch for hand anti-penetration. (default on)
+- **Gap** extra clearance from the collider surface, on top of the collider's own radius. Raise if a hand still grazes the body; lower if hands stop too far away. Negative values let the hand sink past the collider surface, useful when a model's colliders are bigger than its mesh. (default 0, range -0.05 to 0.05 m)
+- **Max release speed** how fast a hand catches up to its real target once anti-penetration lets go. 0 = instant snap. Raise to ease the hand back instead of popping. (default 0, range 0 to 8)
 - **Slew (deg/s)** caps how fast a hand may rotate around a collider surface. (default 450, range 0 to 720)
   - Lower if a deep poke through the body causes a jarring front/back flip.
-  - Raise if the hand feels sluggish following the barrier.
-- **(barrier mask matrix)** for each hand row, choose which body parts that hand avoids. (default: each hand avoids Head + Torso)
-  - Rows: L hand, R hand. Columns: the nine body-part groups. <!-- VERIFY: any other row/column combination officially supported or recommended? -->
+  - Raise if the hand feels sluggish following the surface.
+- **(hand anti-penetration mask matrix)** for each hand row, choose which body parts that hand avoids. (default: each hand avoids Head + Torso)
+  - Rows: L hand, R hand. Columns: Head, Torso, Legs. <!-- VERIFY: any other row/column combination officially supported or recommended? -->
   - Add more parts only for a specific clipping problem.
 
 ::: tip
