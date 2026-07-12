@@ -1,28 +1,27 @@
 # Common Adjustments
 
-Quick fixes for common problems you can see on screen. For full control descriptions, see the individual [reference](/MocapSeitai/reference/) pages. Tuning persists per avatar through the map file (Save map in [Load model](/MocapSeitai/reference/loading-your-model)).
+Quick fixes for common problems you can see on screen. Defaults are a good starting point, but every model needs some tuning. For full control descriptions, see the individual [reference](/MocapSeitai/reference/) pages. Tuning persists per avatar through the map file (Save map in [Load model](/MocapSeitai/reference/loading-your-model)).
 
-## Pick your transfer mode
+## First: tune retarget offsets
 
-Stay on `Muscle` (the default). `Offset` is a legacy mode; only try it if you experience serious trouble in Muscle mode.
+Posture depends on three things at once: your mocap input, your body, and the model. No default fits every combination, and getting this right fixes most clipping.
 
-If using `My body` proportions (under [Actor body](/MocapSeitai/reference/actor-body)), enter your real height and arm span so spatial corrections land in the right place.
+Open **Retarget offsets** in [Muscle limits](/MocapSeitai/reference/muscle-limits) and adjust the sliders until the pose looks natural on your avatar. **Arm spread** is the usual first knob if arms sit too close to the torso.
 
-See [Smoothing](/MocapSeitai/reference/smoothing) and [Actor body](/MocapSeitai/reference/actor-body).
+## Then: tune hand alignment
 
-## Claps don't meet
+Same three-way dependency. Adjust these in [Hand position alignment](/MocapSeitai/reference/hand-position-alignment) to your needs:
 
-Turn on **Hand contact** and adjust **Hand contact distance** until claps look right. Raise if hands overlap, lower if they stop short.
-
-See [Hand position alignment](/MocapSeitai/reference/hand-position-alignment).
+- **Alignment strength** how strongly hands are placed at their spatial target.
+- **Shoulder vs head** anchor blend: toward 1 for face touches to land accurately, toward 0 for contacts that should track the torso.
 
 ## Hyperextended, straight-locked limbs
 
-Lower **Tightness** slightly (try `0.95`) in [Muscle limits](/MocapSeitai/reference/muscle-limits). Muscle mode only.
+Lower **Tightness** slightly (try `0.95`) in [Muscle limits](/MocapSeitai/reference/muscle-limits).
 
 ## Upper arm clips the torso
 
-In Muscle mode, try increasing **Arm spread** in Retarget offsets ([Muscle limits](/MocapSeitai/reference/muscle-limits)) first. A small increment is often enough.
+Try increasing **Arm spread** in Retarget offsets first (see above). A small increment is often enough.
 
 If that's not sufficient, go to [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration): tick **Torso** in the `L upper arm` / `R upper arm` rows, and try **Upper-arm test** `Full segment` if `Elbow point` still clips.
 
