@@ -6,7 +6,7 @@ Quick fixes for common problems you can see on screen. Defaults are a good start
 
 Posture depends on three things at once: your mocap input, your body, and the model. No default fits every combination, and getting this right fixes most clipping.
 
-Open **Retarget offsets** in [Muscle limits](/MocapSeitai/reference/muscle-limits) and adjust the sliders until the pose looks natural on your avatar. **Arm spread** is the usual first knob if arms sit too close to the torso.
+Open **Retarget offsets** in [Muscle limits](/MocapSeitai/reference/muscle-limits) and adjust the sliders until the pose looks natural on your avatar. **Upper-arm spread** is the usual first knob if arms sit too close to the torso.
 
 ## Then: tune hand alignment
 
@@ -21,13 +21,13 @@ Lower **Tightness** slightly (try `0.95`) in [Muscle limits](/MocapSeitai/refere
 
 ## Upper arm clips the torso
 
-Try increasing **Arm spread** in Retarget offsets first (see above). A small increment is often enough.
+Try increasing **Upper-arm spread** in Retarget offsets first (see above). A small increment is often enough.
 
-If that's not sufficient, go to [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration): tick **Torso** in the `L upper arm` / `R upper arm` rows, and try **Upper-arm test** `Full segment` if `Elbow point` still clips.
+If that's not sufficient, go to [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration). **Head** + **Torso** is already the default for the `L upper arm` / `R upper arm` rows; try **Upper-arm test** `Full segment` if `Elbow point` still clips.
 
 ## Feet slide
 
-Raise **pinFeet** toward 1 in [Hand position alignment](/MocapSeitai/reference/hand-position-alignment).
+Raise **pinFeet** toward 1 in [Hand position alignment](/MocapSeitai/reference/hand-position-alignment) if you lowered it from the default 1.
 
 ## Hips sink on a chibi
 

@@ -7,6 +7,7 @@ Visual aids and comparison view for seeing what the correction pipeline is doing
 - **Comparison** Off / Ghost / Side by side. Shows the uncorrected motion as a ghost or twin. Not persisted across restarts. (default Off)
 - **Show source skeleton** draws the incoming motion as a stick figure: the raw input before any correction. (default off, persisted)
 - **Show shadow rig** draws the destination-proportioned reference rig used as hand/foot IK targets. (default off, persisted)
+- **Power save (no 3D render)** blacks out the 3D view to save GPU while VMC output keeps running. (default off)
 
 ## Comparison modes
 

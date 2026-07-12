@@ -1,28 +1,20 @@
 # Colliders
 
-MocapSeitai fits tapered-capsule colliders to your VRM's mesh on load. These are what [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration), [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration), and [Hand position alignment](/MocapSeitai/reference/hand-position-alignment)'s contact barrier test against. Check them after loading a new avatar; if a hand still clips the torso with anti-penetration tuned, the fix is often a collider that's undersized.
+MocapSeitai fits tapered-capsule colliders to your VRM's mesh on load. These are what [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration), [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration), and [Hand position alignment](/MocapSeitai/reference/hand-position-alignment)'s hand contact behavior test against. Check them after loading a new avatar; if a hand still clips the torso with anti-penetration tuned, the fix is often a collider that's undersized.
 
 The main panel has a compact overlay control; clicking **Adjust colliders** opens a full editor in a side panel.
 
 ::: warning
-The nine per-part toggles below are overlay display filters only. They control what you *see* in the wireframe, not what collides. Turning "Legs" off does not disable leg collision.
+The nine group checkboxes under **Overlay preview -- groups drawn:** are overlay display filters only. They control what you *see* in the wireframe, not what collides. Turning "Legs" off does not disable leg collision.
 :::
 
 ## Settings
 
-- **Head** show/hide in wireframe overlay. (default on)
-- **Torso** show/hide in wireframe overlay. (default on)
-- **Legs** show/hide in wireframe overlay. (default on)
-- **Left hand** show/hide in wireframe overlay. (default on)
-- **Right hand** show/hide in wireframe overlay. (default on)
-- **Left forearm** show/hide in wireframe overlay. (default on)
-- **Right forearm** show/hide in wireframe overlay. (default on)
-- **Left upper arm** show/hide in wireframe overlay. (default on)
-- **Right upper arm** show/hide in wireframe overlay. (default on)
 - **Overlay** toggles the wireframe overlay in the 3D view. (default off)
+- **Overlay preview -- groups drawn:** appears while Overlay is on. The nine group checkboxes filter the wireframe preview only; they do not enable or disable collision. (default all on)
 - **Adjust colliders** opens the collider editor side panel. Automatically turns Overlay on. Mutually exclusive with the muscle editor.
 
-<!-- CAPTURE: main panel with Overlay switched on, then each of the nine per-part toggles clicked off one at a time to show the wireframe segments disappearing from the 3D view, roughly 15s -->
+<!-- CAPTURE: main panel with Overlay switched on, then each of the nine Overlay preview group checkboxes clicked off one at a time to show the wireframe segments disappearing from the 3D view, roughly 15s -->
 *(media pending)*
 
 ## Colliders (editor side panel)
