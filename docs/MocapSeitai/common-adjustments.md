@@ -4,7 +4,7 @@ Quick fixes for common problems you can see on screen. For full control descript
 
 ## Pick your transfer mode
 
-Both modes work with any input. `Offset` directly copies bone rotations through the T-pose offset, so it preserves precise input well. `Muscle` converts through Unity's muscle space and tends to handle noisy or consumer-grade input better. Try both and see which looks better for your setup.
+Stay on `Muscle` (the default). `Offset` is a legacy mode; only try it if you experience serious trouble in Muscle mode.
 
 If using `My body` proportions (under [Actor body](/MocapSeitai/reference/actor-body)), enter your real height and arm span so spatial corrections land in the right place.
 
