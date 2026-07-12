@@ -6,8 +6,8 @@ Transfer mode and bone smoothing. Set these once per setup, come back if the mot
 
 - **Transfer mode** how the actor's pose is converted onto your character. (default Muscle)
   - **Muscle** converts through Unity's humanoid muscle space.
-  - **Offset** directly copies bone rotations through the T-pose offset. Greys out [Muscle limits](/MocapSeitai/reference/muscle-limits) and the muscle editor panel.
-  - Corrections run in both modes. Global app setting; loading a map never changes it. See [Common adjustments](/MocapSeitai/common-adjustments) for picking.
+  - **Offset** legacy mode: directly copies bone rotations through the T-pose offset. Greys out [Muscle limits](/MocapSeitai/reference/muscle-limits) and the muscle editor panel. Use only if Muscle mode gives serious trouble.
+  - Corrections run in both modes. Global app setting; loading a map never changes it.
 - **Smoothing** bone-smoothing preset: **Off** / **Low latency** / **Balanced** / **Smooth** / **Custom**. (default Balanced)
 
   ::: tip
