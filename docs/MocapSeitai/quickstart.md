@@ -36,9 +36,8 @@ Everything runs on one PC.
    - **VMC** (the default **Input mode**): in your tracking app, set VMC output to this PC on port **39539** (matches MocapSeitai's default **Listen port**).
    - **mocopi** / **Rokoko**: switch **Input mode** accordingly and point the sender at the port shown (mocopi default **12351**, Rokoko default **14043**). See [Connections](/MocapSeitai/reference/connections) for details.
 4. In the **Output** section, leave **Send address** at `127.0.0.1` for same-PC setups. Set **Send port** to match your receiver app's listen port (default **39540**).
-5. Press **Start**.
-6. Check the **Status** section: **Messages/s** should be counting up. If it stays at 0, see [Troubleshooting](/MocapSeitai/troubleshooting).
-7. Click **Realign actor rig** and **Realign character rig** to make sure the rigs are aligned to the current pose.
+5. Check the **Status** section: **Messages/s** should be counting up — the loop starts by itself as soon as input arrives. If it stays at 0, see [Troubleshooting](/MocapSeitai/troubleshooting).
+6. Click **Realign actor rig** and **Realign character rig** to make sure the rigs are aligned to the current pose.
 
 Your avatar should now be moving with corrections applied.
 

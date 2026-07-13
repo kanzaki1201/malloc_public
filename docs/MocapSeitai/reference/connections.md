@@ -8,7 +8,7 @@ Where motion comes from and where the corrected result goes. Set this once when 
 - **(counters line)** reads `Messages/s: N   Addresses: N   Send drops: N`, live count of incoming traffic, distinct addresses, and outgoing drops.
 
 ::: tip
-If **Messages/s** stays at 0 after pressing Start, the loop isn't receiving anything. Usually a firewall issue or wrong IP/port. See [Troubleshooting](/MocapSeitai/troubleshooting).
+If **Messages/s** stays at 0 while your tracking app is sending, the loop isn't receiving anything. Usually a firewall issue or wrong IP/port. See [Troubleshooting](/MocapSeitai/troubleshooting).
 :::
 
 ## Input
@@ -35,12 +35,13 @@ Only fields for the current **Input mode** are shown.
 Load the same VRM in the receiver as in MocapSeitai. A mismatched avatar will fight the corrections. See [Loading your model](/MocapSeitai/reference/loading-your-model).
 :::
 
-## Start / Stop
+## Seitai corrections (master switch)
 
-- **Start** starts receiving and correcting.
-- **Stop** stops the loop and holds the last pose (character freezes in place rather than snapping to a default pose).
+The loop starts and stops itself — as soon as input arrives it runs, and when input stops the character holds its last pose. The always-visible toggle at the top of the panel is the master switch instead:
 
-<!-- CAPTURE: press Start with a tracker feeding input, showing the Status counters line ticking up Messages/s and Addresses; then press Stop and show the character holding its last pose; ~20s -->
+- **Seitai corrections** ON: the corrected, seitaied stream is what leaves the app. OFF: every incoming VMC message forwards verbatim and nothing is regenerated — as if MocapSeitai weren't in the chain. Use OFF as the escape hatch if a correction ever misbehaves mid-session. (default on)
+
+<!-- CAPTURE: with a tracker feeding input, flip Seitai corrections off and on, showing the character switch between raw and corrected motion; ~15s -->
 *(media pending)*
 
-If Status stays at `Messages/s: 0` after Start, see [Troubleshooting](/MocapSeitai/troubleshooting).
+If Status stays at `Messages/s: 0` while the sender is running, see [Troubleshooting](/MocapSeitai/troubleshooting).

@@ -4,7 +4,7 @@
 
 ### Messages/s stays at 0
 
-The [Status](/MocapSeitai/reference/connections) line shows `Messages/s: 0` after pressing **Start**.
+The [Status](/MocapSeitai/reference/connections) line shows `Messages/s: 0` while your tracking app is sending.
 
 - **Firewall not allowed.** Open Windows Defender Firewall, find MocapSeitai under **Allow an app through firewall**, and check **Private** networks.
 - **Wrong IP or port.** Check that your tracking app's target IP is this PC and the port matches MocapSeitai's **Listen port** / **mocopi port** / **Rokoko port** (whichever matches your [Input mode](/MocapSeitai/reference/connections)).
