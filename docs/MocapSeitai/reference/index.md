@@ -5,13 +5,19 @@ MocapSeitai's workflow lives in one scrollable panel. This page maps the section
 <!-- CAPTURE: full annotated screenshot of the main panel, scrolled to show every section header (Status through Diagnostics), with callout labels pointing at each section name; static image -->
 *(media pending)*
 
+## Pinned header
+
+Always visible above the scrolling sections:
+
+- **Expand all / Collapse all** open or close every section below — handy for jumping around the tall panel.
+- **Seitai corrections** the master switch: ON = corrected output, OFF = incoming VMC forwards verbatim (the escape hatch). See [Connections](/MocapSeitai/reference/connections).
+
 ## Panel sections
 
 - **Status** live readout of the loop. See [Connections](/MocapSeitai/reference/connections).
 - **Realign & reset** action buttons. See [Loading your model](/MocapSeitai/reference/loading-your-model).
 - **Input** mocap source and listen port. See [Connections](/MocapSeitai/reference/connections).
 - **Output** where the corrected VMC stream goes. See [Connections](/MocapSeitai/reference/connections).
-- **Start / Stop** run control. See [Connections](/MocapSeitai/reference/connections).
 - **Load model** load your VRM and save/load per-avatar maps. See [Loading your model](/MocapSeitai/reference/loading-your-model).
 - **Mode & display** comparison view and skeleton overlays. See [Mode & display](/MocapSeitai/reference/mode-and-display).
 - **Actor body** performer's real-world proportions. See [Actor body](/MocapSeitai/reference/actor-body).
