@@ -1,5 +1,6 @@
 # Forced Perspective
-
+![](../assets/fov_before.png)
+![](../assets/fov_after.png)
 <!-- CAPTURE: FP off/on toggle, close wide-angle camera on a face -->
 
 Compresses the character's depth toward an anchor at render time, so a close wide-angle camera renders telephoto-like proportions instead of a stretched face.
@@ -14,7 +15,7 @@ The correction is computed per camera in the shader: multiple cameras, mirrors, 
 
 ## Settings
 
-- **Strength** — 0 = off, 1 = strong compression. The slider caps at 1 but you can type a higher value for a full 2D-flatten look. <!-- CAPTURE: strength sweep 0 → 1 → 3 -->
+- **Strength** — 0 = off, 1 = strong compression. The slider caps at 1, however values greater > 1 is supported (behaves like orthographic).
 - **Anchor** — the baked anchor, read-only. The inspector warns if the material hasn't been baked yet.
 
 ## Notes
