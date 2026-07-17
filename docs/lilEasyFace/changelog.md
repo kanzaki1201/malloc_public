@@ -2,7 +2,7 @@
 
 ## 0.8.1 — 2026-07-16
 
-- **Perspective Controller** component (`lilEasyFace → Perspective Controller`, avatar root): sets Forced Perspective enable/strength on every lilEasyFace material under it via MaterialPropertyBlock — material assets not modified; disabling restores the material values.
+- **lilEasyFace Control Panel** editor window (`Window → lilEasyFace → lilEasyFace Control Panel`): assign an avatar root, edit Forced Perspective enable/strength on every lilEasyFace material under it at once. Writes the material values directly (undoable).
 
 ## 0.8.0 — 2026-07-16
 
