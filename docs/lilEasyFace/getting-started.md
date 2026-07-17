@@ -6,7 +6,7 @@
 
 - Get **smooth, rounded toon shading** without transferring normals from a proxy sphere in Blender or DCC software — just enable [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal).
 - Get **"face triangle" light (Rembrandt light)** without hand-editing face normals *or* drawing and baking a multi-angle SDF face-shadow map — [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle) needs a single mask.
-- Kill the **wide-angle "GoPro face"** on close virtual cameras without a mesh deformer — [Forced Perspective](/lilEasyFace/features/forced-perspective) flattens depth per camera, at render time.
+- Get **drawn-correct proportions on close wide-angle cameras** — [Forced Perspective](/lilEasyFace/features/forced-perspective) compresses depth per camera, at render time.
 - And if you *do* want full manual control, [Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map) lets you drop a hand-painted object-space normal directly into lilToon's main normal map slot.
 
 All features work well together with each other.
