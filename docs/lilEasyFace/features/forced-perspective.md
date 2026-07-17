@@ -5,7 +5,7 @@
 
 Compresses the character's depth toward an anchor at render time, so a close wide-angle camera renders telephoto-like proportions instead of a stretched face.
 
-The correction is computed per camera in the shader: multiple cameras, mirrors, and both VR eyes each get their own correction at the same time. Outlines compress together with the geometry, shadow casters keep the true shape, and orthographic cameras are unaffected.
+The correction is computed per rendering camera in the shader, so multiple cameras each get their own correction at the same time. Outlines compress together with the geometry, shadow casters keep the true shape, and orthographic cameras are unaffected.
 
 ## Setup
 
