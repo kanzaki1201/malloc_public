@@ -1,8 +1,13 @@
 # Changelog
 
-## 0.8.1 — 2026-07-16
+## 0.8.2 — 2026-07-16
 
 - **lilEasyFace Control Panel** editor window (`Window → lilEasyFace → lilEasyFace Control Panel`): assign an avatar root, edit Forced Perspective enable/strength on every lilEasyFace material under it at once. Writes the material values directly (undoable).
+- **Stock lilToon → lilEasyFace converter** in the Control Panel: converts every stock lilToon material under the avatar root to the equivalent lilEasyFace shader (matching transparent mode, outline, overlay, FakeShadow variant), keeping existing property values. Unsupported stock variants are skipped and reported.
+
+## 0.8.1 — 2026-07-16
+
+- License metadata corrected to VN3 License; VN3 license PDFs bundled in the package.
 
 ## 0.8.0 — 2026-07-16
 
