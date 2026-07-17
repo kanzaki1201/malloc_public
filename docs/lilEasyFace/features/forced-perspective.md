@@ -18,10 +18,8 @@ The correction is computed per rendering camera in the shader, so multiple camer
 - **Strength** — 0 = off, 1 = strong compression. The slider caps at 1, however values greater than 1 are supported (behaves like orthographic).
 - **Anchor** — the baked anchor, read-only. The inspector warns if the material hasn't been baked yet.
 
-## Perspective Controller
+## Control Panel
 
-To drive the whole character from one place, add **lilEasyFace → Perspective Controller** to the avatar root. One enable toggle and one Strength control every lilEasyFace material under it, in the editor and at runtime.
-
-It applies per-renderer overrides (MaterialPropertyBlock), so material assets are never modified — disable the component and rendering returns to the material values.
+To edit the whole character from one place, open **Window → lilEasyFace → lilEasyFace Control Panel**, assign the avatar root, and set Forced Perspective enable/strength for every lilEasyFace material under it at once. It writes the material values directly, with undo support.
 
 
