@@ -105,6 +105,7 @@ export default defineConfig({
               items: [
                 { text: 'Easy Face Triangle', link: '/lilEasyFace/features/easy-face-triangle' },
                 { text: 'Smooth Vertex Normal', link: '/lilEasyFace/features/smooth-vertex-normal' },
+                { text: 'Forced Perspective', link: '/lilEasyFace/features/forced-perspective' },
                 { text: 'Object-Space Normal Map', link: '/lilEasyFace/features/object-space-normal-map' },
                 { text: 'Data Baker', link: '/lilEasyFace/features/data-baker' }
               ]

@@ -9,6 +9,8 @@ It writes two things in one pass:
 
 It always bakes both, and it saves a new mesh asset and never touches your original.
 
+It also has a separate **avatar-scope Anchor pass** for [Forced Perspective](./forced-perspective) — materials only, no mesh involved.
+
 ## Open it
 
 Material inspector → **Data Baker** section → **Data Baker** button, or the menu
@@ -23,7 +25,19 @@ Material inspector → **Data Baker** section → **Data Baker** button, or the 
 
 Re-bake if you swap the mesh or regenerate its tangents.
 
+## Forced Perspective Anchor
+
+The Anchor pass writes the [Forced Perspective](./forced-perspective) anchor to **every lilEasyFace material** under an avatar root. No mesh copies — it only sets material values.
+
+1. **Avatar Root** — the character root (needs an `Animator`).
+2. **Anchor Bone** — auto-detected **Hips**. Override only if you know why (an off-center anchor makes the body slide as the camera orbits).
+3. **Offset (bone space)** — optional nudge.
+4. Click **Apply** — the anchor is written to all lilEasyFace materials under the root.
+
+If one material is shared by renderers that need different anchors, the baker warns — split the material instead of shipping a mismatch.
+
 ## Then
 
 - Turn on **Follow head bone** in [Easy Face Triangle](./easy-face-triangle), and/or
-- Turn on [Smooth Vertex Normal](./smooth-vertex-normal).
+- Turn on [Smooth Vertex Normal](./smooth-vertex-normal), and/or
+- Turn on [Forced Perspective](./forced-perspective).

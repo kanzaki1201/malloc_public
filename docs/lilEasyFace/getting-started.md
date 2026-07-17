@@ -6,6 +6,7 @@
 
 - Get **smooth, rounded toon shading** without transferring normals from a proxy sphere in Blender or DCC software — just enable [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal).
 - Get **"face triangle" light (Rembrandt light)** without hand-editing face normals *or* drawing and baking a multi-angle SDF face-shadow map — [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle) needs a single mask.
+- Kill the **wide-angle "GoPro face"** on close virtual cameras without a mesh deformer — [Forced Perspective](/lilEasyFace/features/forced-perspective) flattens depth per camera, at render time.
 - And if you *do* want full manual control, [Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map) lets you drop a hand-painted object-space normal directly into lilToon's main normal map slot.
 
 All features work well together with each other.
@@ -14,11 +15,15 @@ It layers on top of stock lilToon without modifying it, and every feature is **o
 
 The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/features/data-baker) in Unity editor and no runtime scripts.
 
+## Transparent modes
+
+lilEasyFace ships the full lilToon shader family: **OnePass / TwoPass Transparent** (each with Outline), **Overlay**, **Overlay OnePass**, and **FakeShadow** — every variant carries every lilEasyFace feature, including Forced Perspective. Switch modes exactly like stock lilToon: the **Rendering Mode / Transparent Mode** dropdowns in the material editor. No extra UI to learn.
+
 ## Requirements
 
 - Unity 2022.3 or later
 - [lilToon](https://lilxyzw.github.io/lilToon/) 2.3.2 or later, imported first
-- 
+
 ## Compatibility
 - Built-in Render Pipeline: YES
 - Universal Render Pipeline: YES
@@ -42,5 +47,6 @@ Gumroad: https://malloc.gumroad.com/l/lileasyface
 
 - [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle)
 - [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal)
+- [Forced Perspective](/lilEasyFace/features/forced-perspective)
 - [Object-Space Normal Map](/lilEasyFace/features/object-space-normal-map)
 - [Data Baker](/lilEasyFace/features/data-baker)
