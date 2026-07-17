@@ -36,6 +36,7 @@ export default defineConfig({
     nav: [
       { text: 'MocapSeitai', link: '/MocapSeitai/quickstart', activeMatch: '/MocapSeitai/' },
       { text: 'lilEasyFace', link: '/lilEasyFace/getting-started', activeMatch: '/lilEasyFace/' },
+      { text: 'Easy MC2 Helper', link: '/EasyMC2Helper/quickstart', activeMatch: '/EasyMC2Helper/' },
       { text: 'Report a Bug', link: '/bug-report' },
       {
         text: 'About',
@@ -43,7 +44,8 @@ export default defineConfig({
           { text: 'Contact', link: '/contact' },
           { text: 'Credits', link: '/credits' },
           { text: 'MocapSeitai License', link: '/MocapSeitai/license' },
-          { text: 'lilEasyFace License', link: '/lilEasyFace/license' }
+          { text: 'lilEasyFace License', link: '/lilEasyFace/license' },
+          { text: 'Easy MC2 Helper License', link: '/EasyMC2Helper/license' }
         ]
       }
     ],
@@ -85,6 +87,18 @@ export default defineConfig({
             { text: 'Troubleshooting & Diagnostics', link: '/MocapSeitai/troubleshooting' },
             { text: 'Changelog', link: '/MocapSeitai/changelog' },
             { text: 'License', link: '/MocapSeitai/license' }
+          ]
+        }
+      ],
+      '/EasyMC2Helper/': [
+        {
+          text: 'Easy MC2 Helper',
+          items: [
+            { text: 'Quickstart', link: '/EasyMC2Helper/quickstart' },
+            { text: 'UI Reference', link: '/EasyMC2Helper/ui-reference' },
+            { text: 'Troubleshooting', link: '/EasyMC2Helper/troubleshooting' },
+            { text: 'Changelog', link: '/EasyMC2Helper/changelog' },
+            { text: 'License', link: '/EasyMC2Helper/license' }
           ]
         }
       ],

@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in lilEasyFace or MocapSeitai isn't working as expected.
+description: Something in a malloc product isn't working as expected.
 labels: [bug]
 body:
   - type: markdown
@@ -12,22 +12,30 @@ body:
       options:
         - lilEasyFace
         - MocapSeitai
+        - Easy MC2 Helper
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: lilEasyFace version
-      placeholder: e.g. 0.6.0
+      label: Product version
+      placeholder: e.g. 1.0.0
     validations:
       required: true
   - type: input
     id: liltoon
     attributes:
-      label: lilToon version
+      label: lilToon version (for lilEasyFace bugs)
       placeholder: e.g. 2.3.4
     validations:
-      required: true
+      required: false
+  - type: input
+    id: magicacloth
+    attributes:
+      label: MagicaCloth 2 version (for Easy MC2 Helper bugs)
+      placeholder: e.g. 2.14.0
+    validations:
+      required: false
   - type: input
     id: unity
     attributes:

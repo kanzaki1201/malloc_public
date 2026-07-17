@@ -1,7 +1,17 @@
 name: Feature request
-description: Suggest an idea or improvement for lilEasyFace.
+description: Suggest an idea or improvement for a malloc product.
 labels: [enhancement]
 body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - lilEasyFace
+        - MocapSeitai
+        - Easy MC2 Helper
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:
