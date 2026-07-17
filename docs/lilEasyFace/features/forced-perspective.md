@@ -18,8 +18,4 @@ The correction is computed per camera in the shader: multiple cameras, mirrors, 
 - **Strength** — 0 = off, 1 = strong compression. The slider caps at 1, however values greater > 1 is supported (behaves like orthographic).
 - **Anchor** — the baked anchor, read-only. The inspector warns if the material hasn't been baked yet.
 
-## Notes
 
-- The anchor sits at the **Hips** (body center). An off-center anchor makes the body slide as the camera orbits — that's why the baker doesn't offer a head anchor.
-- Works on every lilEasyFace shader variant, including the transparent modes and FakeShadow (the projected fake shadow follows the compressed silhouette).
-- No new shader keywords and no re-bake of existing uv6/uv7 meshes. The values are plain floats, so they can be animated.
