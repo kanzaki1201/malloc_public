@@ -2,7 +2,7 @@
 
 ## 0.8.0 — 2026-07-16
 
-- **Forced Perspective** — per-camera depth compression for drawn-correct proportions on close wide-angle cameras. Multicam / mirror / VR-eye coherent; outlines compress with the geometry; shadow casters keep true shape. See [Forced Perspective](/lilEasyFace/features/forced-perspective).
+- **Forced Perspective** — per-camera depth compression for drawn-correct proportions on close wide-angle cameras. Multicam coherent; outlines compress with the geometry; shadow casters keep true shape. See [Forced Perspective](/lilEasyFace/features/forced-perspective).
 - **Data Baker: avatar-scope Anchor pass** — one click writes the Forced Perspective anchor (auto-detected Hips) to every lilEasyFace material under the avatar root.
 - **Full transparent shader family** — OnePass / TwoPass Transparent (+Outline), Overlay, Overlay OnePass, FakeShadow. All features on every variant; stock lilToon's Rendering Mode / Transparent Mode dropdowns drive switching.
 - FakeShadow follows Forced Perspective.
