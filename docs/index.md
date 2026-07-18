@@ -20,4 +20,7 @@ features:
   - title: lilEasyFace
     details: "Add-on / extension for lilToon: smooth toon normals, face-triangle light, forced perspective, and object-space normal maps as material toggles."
     link: /lilEasyFace/getting-started
+  - title: Easy MC2 Helper
+    details: Free MagicaCloth 2 setup tool for Unity — one-click humanoid colliders, batch collider editing, symmetry copy, and binding maps that restore a whole cloth setup.
+    link: /EasyMC2Helper/quickstart
 ---
