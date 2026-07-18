@@ -18,6 +18,6 @@ features:
     details: Mocap retargeting middleware — drop it between your tracking app and your renderer. Proportion-aware corrections make hands reach the face, claps meet, and arms stop clipping.
     link: /MocapSeitai/quickstart
   - title: lilEasyFace
-    details: lilToon face-shading add-on — smooth toon normals, face-triangle light, and object-space normal maps as material toggles.
+    details: lilToon face-shading add-on: smooth toon normals, face-triangle light, and object-space normal maps as material toggles.
     link: /lilEasyFace/getting-started
 ---
