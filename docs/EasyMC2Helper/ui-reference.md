@@ -9,11 +9,11 @@ Always visible above the tabs.
 | Control | What it does |
 | --- | --- |
 | **Humanoid Character** | Character root to operate on. Collider generation, humanoid bone assignment, and symmetry copy need an Animator rigged as Humanoid — a warning shows if it's missing. |
-| **Binding Map** | The asset that stores a captured cloth setup for this character: MagicaCloth components, colliders, references, reduction settings, and prebuild state. |
+| **Binding Map** | The asset that stores a captured cloth setup for this character: MagicaCloth components, colliders, references, reduction settings, simulation parameters, and prebuild state. |
 | **New** | Creates a binding map asset for the assigned character and captures the current setup into it. The asset is created next to the character's prefab/model file. |
 | **Scan** | Re-scans the character for MagicaCloth components, colliders, and renderers. Runs automatically when you assign a character. |
-| **Capture Map** | Saves the character's current MagicaCloth setup into the binding map, replacing its previous content. |
-| **Restore Map** | Applies the binding map to the character. Missing objects and components are re-created; references are repaired by relative path, falling back to unique object names. |
+| **Capture Map** | Saves the character's current MagicaCloth setup into the binding map, replacing its previous content. Simulation parameters (gravity, damping, constraints, wind — the same scope as MagicaCloth's own presets) are included. |
+| **Restore Map** | Applies the binding map to the character. Missing objects and components are re-created; references are repaired by relative path, falling back to unique object names. Saved simulation parameters overwrite the cloth's current values. |
 | **Select All Colliders** | Selects every MagicaCloth collider under the character in the Hierarchy. |
 
 ## Overview tab

@@ -1,18 +1,39 @@
 # License
 
-Easy MC2 Helper is released under the **VN3 License** — free for personal and commercial use, redistribution prohibited.
+Easy MC2 Helper is released under the **MIT License**.
 
-Key points (the full VN3 documents prevail):
+In practice that means:
 
 - Free to use in personal and commercial projects.
-- Cloth setups, colliders, and any other output the tool creates on your characters are yours, without restriction.
-- The runtime components (binding map assets and scripts) may be embedded in works you distribute or sell, as long as the tool itself is not extractable as a standalone product.
-- Redistribution, resale, or re-hosting of the tool itself is prohibited.
-- Modification for your own use is allowed; distributing modified versions is prohibited.
+- Cloth setups, colliders, binding maps, and any other output the tool creates on your characters are yours, without restriction.
+- The runtime components (binding map assets and scripts) may be embedded in works you distribute or sell.
+- You may modify and redistribute the tool; keep the copyright and license notice with any copies.
 - Provided as-is, without warranty.
 
 MagicaCloth 2 is a separate product by Magica Soft with its own license, and is not included.
 
-Full license documents: <!-- VERIFY: VN3 PDF links (en/ja/ko/zh) once generated -->
+Full text:
 
-*(PDFs pending)*
+```text
+MIT License
+
+Copyright (c) 2026 malloc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

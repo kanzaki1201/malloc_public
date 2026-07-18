@@ -10,4 +10,4 @@ Initial release.
 - Copy-to-symmetry: mirrors collider values to the opposite body side, creating the target collider when missing.
 - Cloth component tools: bulk assign renderers, humanoid root bones, selected bones, and colliders.
 - Prebuild management: per-component enable toggle, prebuild data creation, build ID and asset display.
-- Binding maps: capture cloth components, colliders, references, reduction settings, selection data, and prebuild state into an asset; restore recreates missing objects and repairs broken references by relative path with name-based fallback.
+- Binding maps: capture cloth components, colliders, references, reduction settings, selection data, simulation parameters (MagicaCloth preset scope), and prebuild state into an asset; restore recreates missing objects, repairs broken references by relative path with name-based fallback, and applies the saved parameters.
