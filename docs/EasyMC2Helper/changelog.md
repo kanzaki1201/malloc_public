@@ -4,6 +4,8 @@
 
 Initial release.
 
+### Added
+
 - Editor window (`Tools > Easy MC2 Helper`) with Overview, Bindings, Colliders, Cloth, and Prebuild tabs.
 - Humanoid collider auto-generation: per-body-part sphere/capsule shapes, radius/length multipliers, minimum radius, optional finger colliders, overwrite toggle.
 - Collider batch editor: active state, local transform, size sliders, capsule direction/separate radii/reverse/aligned-center, symmetry mode and target.
