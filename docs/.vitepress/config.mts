@@ -36,9 +36,15 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'MocapSeitai', link: '/MocapSeitai/quickstart', activeMatch: '/MocapSeitai/' },
-      { text: 'lilEasyFace', link: '/lilEasyFace/getting-started', activeMatch: '/lilEasyFace/' },
-      { text: 'Easy MC2 Helper', link: '/EasyMC2Helper/quickstart', activeMatch: '/EasyMC2Helper/' },
+      {
+        text: 'Products',
+        activeMatch: '^/(MocapSeitai|lilEasyFace|EasyMC2Helper)/',
+        items: [
+          { text: 'MocapSeitai', link: '/MocapSeitai/quickstart' },
+          { text: 'lilEasyFace', link: '/lilEasyFace/getting-started' },
+          { text: 'Easy MC2 Helper', link: '/EasyMC2Helper/quickstart' }
+        ]
+      },
       { text: 'Report a Bug', link: '/bug-report' },
       {
         text: 'About',
