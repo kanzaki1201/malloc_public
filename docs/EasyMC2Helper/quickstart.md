@@ -34,7 +34,7 @@ Import MagicaCloth 2 **before** the helper, or you'll see assembly reference err
 3. Go to the **Colliders** tab and click **Create / Update Humanoid Colliders**. Capsules and spheres appear on the skeleton, named with the `MC2H_` prefix.
 4. Tweak radii with the sliders, or edit individual colliders in the list below the generator. **Copy To Symmetry** mirrors a hand-tuned collider to the other side.
 5. On the **Cloth** tab, assign colliders to your cloth components with **All Colliders** (or select some in the Hierarchy and use **Selected Colliders**).
-6. Back in the header, click **New** to create a **binding map**, then **Capture Map**. Your whole setup is now stored in an asset — **Restore Map** brings it back after a broken prefab, re-import, or on a fresh copy of the character.
+6. Back in the header, click **New** to create a **binding map**, then **Capture Map**. Your whole setup — components, references, and simulation parameters (same scope as MagicaCloth's own presets) — is now stored in an asset. **Restore Map** brings it back after a broken prefab, re-import, or on a fresh copy of the character.
 
 <!-- CAPTURE: screenshot — Colliders tab after generation: settings block on top, generated collider list below, avatar with visible capsule gizmos in Scene view. -->
 *(media pending)*
