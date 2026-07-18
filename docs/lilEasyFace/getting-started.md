@@ -2,7 +2,7 @@
 
 ![](./assets/getting_started.webm)
 
-**lilEasyFace** is a custom [lilToon](https://lilxyzw.github.io/lilToon/) shader add-on. It takes a few stylized face-shading techniques that normally send you into Blender or a texture-baking pipeline and turns each one into a toggle in the Unity material editor. The name is the point: **easy**.
+**lilEasyFace** is an add-on / extension for [lilToon](https://lilxyzw.github.io/lilToon/) — get lilToon from its official site first. It takes a few stylized face-shading techniques that normally send you into Blender or a texture-baking pipeline and turns each one into a toggle in the Unity material editor. The name is the point: **easy**.
 
 - Get **smooth, rounded toon shading** without transferring normals from a proxy sphere in Blender or DCC software — just enable [Smooth Vertex Normal](/lilEasyFace/features/smooth-vertex-normal).
 - Get **"face triangle" light (Rembrandt light)** without hand-editing face normals *or* drawing and baking a multi-angle SDF face-shadow map — [Easy Face Triangle](/lilEasyFace/features/easy-face-triangle) needs a single mask.
@@ -15,9 +15,25 @@ It layers on top of stock lilToon without modifying it, and every feature is **o
 
 The head-tracking features rely on a one-click [Data Baker](/lilEasyFace/features/data-baker) in Unity editor and no runtime scripts.
 
-## Transparent modes
+## Supported shader variants
 
-lilEasyFace ships the full lilToon shader family: **OnePass / TwoPass Transparent** (each with Outline), **Overlay**, **Overlay OnePass**, and **FakeShadow** — every variant carries every lilEasyFace feature, including Forced Perspective. Switch modes exactly like stock lilToon: the **Rendering Mode / Transparent Mode** dropdowns in the material editor. No extra UI to learn.
+Every supported variant carries every lilEasyFace feature. Switch modes exactly like stock lilToon: the **Rendering Mode / Transparent Mode** dropdowns in the material editor.
+
+Supported:
+
+- Opaque / Cutout / Transparent
+- OnePass / TwoPass Transparent (each with Outline)
+- Overlay, Overlay OnePass
+- FakeShadow
+
+Not supported:
+
+- Fur
+- Gem
+- Refraction
+- Tessellation
+- Lite family
+- Outline-only
 
 ## Requirements
 
