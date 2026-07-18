@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: lilEasyFace docs
       link: /lilEasyFace/getting-started
+    - theme: alt
+      text: Easy MC2 Helper docs
+      link: /EasyMC2Helper/quickstart
 
 features:
   - title: MocapSeitai
