@@ -1,50 +1,106 @@
 /**
- * malloc brand theme — magenta accent derived from the mascot's hair color,
- * Outfit for display/headings. Overrides VitePress default-theme tokens only;
- * layout and components stay stock so theme updates keep working.
+ * malloc site theme — Catppuccin Latte (light) / Frappé (dark, site default via
+ * `appearance: 'dark'` in config). Accent = Catppuccin pink, matching the mascot.
+ * Overrides VitePress default-theme tokens only; layout/components stay stock.
+ * Palette reference: https://catppuccin.com/palette (only deliberate deviation:
+ * Latte link color is a deepened pink for WCAG AA on the Latte base).
  */
 
-/* ---- Brand color: magenta (mascot), light mode tuned for AA on white ---- */
+/* ================= Latte (light) ================= */
 :root {
-  --vp-c-brand-1: #b31690; /* links, active states — 5.2:1 on white */
-  --vp-c-brand-2: #cf2fa8; /* hover */
-  --vp-c-brand-3: #e14dbd; /* solid fills */
-  --vp-c-brand-soft: rgba(225, 77, 189, 0.14);
+  --vp-c-bg: #eff1f5;        /* base */
+  --vp-c-bg-alt: #e6e9ef;    /* mantle — sidebar */
+  --vp-c-bg-soft: #e6e9ef;   /* mantle — soft blocks */
+  --vp-c-bg-elv: #eff1f5;    /* elevated: search, dialogs */
 
-  /* Buttons: deeper fill than brand-3 so white label passes AA */
-  --vp-button-brand-bg: #b31690;
-  --vp-button-brand-hover-bg: #cf2fa8;
-  --vp-button-brand-active-bg: #9a127b;
+  --vp-c-gutter: #dce0e8;    /* crust */
+  --vp-c-divider: #ccd0da;   /* surface0 */
+  --vp-c-border: #bcc0cc;    /* surface1 */
 
-  /* Home hero */
+  --vp-c-text-1: #4c4f69;    /* text */
+  --vp-c-text-2: #6c6f85;    /* subtext0 */
+  --vp-c-text-3: #8c8fa1;    /* overlay1 */
+
+  --vp-c-brand-1: #b93a9c;   /* pink deepened for AA link contrast */
+  --vp-c-brand-2: #ea76cb;   /* pink — hover */
+  --vp-c-brand-3: #ea76cb;   /* pink — fills */
+  --vp-c-brand-soft: rgba(234, 118, 203, 0.14);
+
+  --vp-button-brand-bg: #b93a9c;
+  --vp-button-brand-text: #eff1f5;
+  --vp-button-brand-hover-bg: #ea76cb;
+  --vp-button-brand-hover-text: #eff1f5;
+  --vp-button-brand-active-bg: #a02f87;
+
+  --vp-c-tip-1: #40a02b;     /* green */
+  --vp-c-tip-2: #40a02b;
+  --vp-c-tip-soft: rgba(64, 160, 43, 0.14);
+  --vp-c-warning-1: #df8e1d; /* yellow */
+  --vp-c-warning-2: #df8e1d;
+  --vp-c-warning-soft: rgba(223, 142, 29, 0.14);
+  --vp-c-danger-1: #d20f39;  /* red */
+  --vp-c-danger-2: #d20f39;
+  --vp-c-danger-soft: rgba(210, 15, 57, 0.14);
+
+  --vp-code-block-bg: #e6e9ef;
+
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(115deg, #ff4d7e 8%, #d938b8 92%);
+  --vp-home-hero-name-background: linear-gradient(115deg, #ea76cb 8%, #8839ef 92%);
   --vp-home-hero-image-background-image: radial-gradient(
     closest-side,
-    rgba(225, 77, 189, 0.28),
+    rgba(234, 118, 203, 0.28),
     transparent
   );
   --vp-home-hero-image-filter: blur(56px);
 }
 
+/* ================= Frappé (dark, site default) ================= */
 .dark {
-  --vp-c-brand-1: #f77ad4;
-  --vp-c-brand-2: #e659c0;
-  --vp-c-brand-3: #cf2fa8;
-  --vp-c-brand-soft: rgba(230, 89, 192, 0.16);
+  --vp-c-bg: #303446;        /* base */
+  --vp-c-bg-alt: #292c3c;    /* mantle — sidebar */
+  --vp-c-bg-soft: #414559;   /* surface0 — soft blocks */
+  --vp-c-bg-elv: #292c3c;
 
-  --vp-button-brand-bg: #cf2fa8;
-  --vp-button-brand-hover-bg: #e659c0;
-  --vp-button-brand-active-bg: #b31690;
+  --vp-c-gutter: #232634;    /* crust */
+  --vp-c-divider: #414559;   /* surface0 */
+  --vp-c-border: #51576d;    /* surface1 */
 
+  --vp-c-text-1: #c6d0f5;    /* text */
+  --vp-c-text-2: #a5adce;    /* subtext0 */
+  --vp-c-text-3: #838ba7;    /* overlay1 */
+
+  --vp-c-brand-1: #f4b8e4;   /* pink */
+  --vp-c-brand-2: #eebebe;   /* flamingo — hover */
+  --vp-c-brand-3: #f4b8e4;
+  --vp-c-brand-soft: rgba(244, 184, 228, 0.16);
+
+  --vp-button-brand-bg: #f4b8e4;
+  --vp-button-brand-text: #232634;
+  --vp-button-brand-hover-bg: #eebebe;
+  --vp-button-brand-hover-text: #232634;
+  --vp-button-brand-active-bg: #ca9ee6;
+
+  --vp-c-tip-1: #a6d189;     /* green */
+  --vp-c-tip-2: #a6d189;
+  --vp-c-tip-soft: rgba(166, 209, 137, 0.16);
+  --vp-c-warning-1: #e5c890; /* yellow */
+  --vp-c-warning-2: #e5c890;
+  --vp-c-warning-soft: rgba(229, 200, 144, 0.16);
+  --vp-c-danger-1: #e78284;  /* red */
+  --vp-c-danger-2: #e78284;
+  --vp-c-danger-soft: rgba(231, 130, 132, 0.16);
+
+  --vp-code-block-bg: #292c3c;
+
+  --vp-home-hero-name-background: linear-gradient(115deg, #f4b8e4 8%, #ca9ee6 92%);
   --vp-home-hero-image-background-image: radial-gradient(
     closest-side,
-    rgba(207, 47, 168, 0.32),
+    rgba(244, 184, 228, 0.26),
     transparent
   );
 }
 
-/* ---- Type: Outfit for display surfaces, stock stack for body copy ---- */
+/* ================= Type: Outfit for display surfaces ================= */
 :root {
   --malloc-font-display: 'Outfit Variable', 'Inter', ui-sans-serif, system-ui,
     'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
@@ -67,17 +123,7 @@
 .vp-doc h2 { letter-spacing: -0.01em; }
 .VPNavBarTitle .title { font-weight: 600; letter-spacing: -0.01em; }
 
-/* ---- Small chrome touches (kept minimal on purpose) ---- */
-
-/* Sidebar active item: brand tint bar instead of plain text color only */
-.VPSidebarItem.level-1 .item .link.active .text,
-.VPSidebarItem .item .link.active .text {
-  color: var(--vp-c-brand-1);
-}
-
-/* Custom container + badge accents pick up brand-soft automatically. */
-
-/* Hero video card: echo the brand glow already used behind the hero image */
+/* ================= Small chrome touches ================= */
 .VPHero .image-container video {
   border-radius: 12px;
 }

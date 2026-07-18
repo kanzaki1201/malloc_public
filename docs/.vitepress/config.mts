@@ -8,6 +8,8 @@ export default defineConfig({
   base: '/malloc_public/',
   cleanUrls: true,
   lastUpdated: true,
+  // Frappé (dark) is the site default skin; toggle switches to Latte.
+  appearance: 'dark',
 
   // Render Markdown image embeds that point at a video file — ![](clip.webm) — as a <video> player,
   // so videos are authored with the same ![]() syntax as images (and preview in Obsidian). Relative
