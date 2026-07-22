@@ -1,8 +1,8 @@
 # Quickstart
 
-Easy MC2 Helper is a Unity editor tool that speeds up [MagicaCloth 2](https://assetstore.unity.com/packages/tools/physics/magica-cloth-2-242307) setup on humanoid characters. One window covers the whole workflow: generate body colliders, batch-edit them, wire renderers/bones/colliders into cloth components, manage prebuild data, and snapshot the entire setup into a binding map you can restore later.
+Easy MC2 Helper is a Unity editor tool that saves and loads your entire [MagicaCloth 2](https://assetstore.unity.com/packages/tools/physics/magica-cloth-2-242307) setup: snapshot components, simulation parameters, colliders, references, and prebuild data into a **binding map** asset, and restore everything in one click after a broken prefab or re-import. The same window manages prebuild data, bulk-wires renderers/bones/colliders into cloth components, and — as a bonus — generates and batch-edits humanoid body colliders.
 
-<!-- CAPTURE: hero clip — helper window next to a humanoid avatar; click "Create / Update Humanoid Colliders" and capsules appear across the skeleton in one click. ~8 s loop. -->
+<!-- CAPTURE: hero clip — broken prefab (missing references) next to helper window; click "Restore Map" and the full cloth setup comes back. ~8 s loop. -->
 *(media pending)*
 
 ## Requirements
