@@ -13,11 +13,7 @@ Easy MC2 Helper is a Unity editor tool that saves and loads your entire [MagicaC
 
 ## Install
 
-::: tip Download
-Get Easy MC2 Helper free (donations welcome) on Booth. <!-- VERIFY: Booth item URL -->
-:::
-
-**From Booth:** import `EasyMC2Helper-x.y.z.unitypackage` into your project (`Assets > Import Package > Custom Package…`). It lands in `Assets/EasyMC2Helper`.
+**From [Booth](https://malloc5566.booth.pm/items/8388019):** import `EasyMC2Helper-x.y.z.unitypackage` into your project (`Assets > Import Package > Custom Package…`). It lands in `Assets/EasyMC2Helper`.
 
 **Via Unity Package Manager:** `Window > Package Manager > + > Install package from git URL…`
 
