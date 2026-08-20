@@ -40,14 +40,14 @@ One recording session covers all of these. Drop the captured files into `docs/Mo
 
 ## Reference — Smoothing
 
-- [ ] transfer-mode-muscle-offset.webm — Transfer mode dropdown switched from Muscle to Offset, showing the Muscle limits section and muscle editor panel grey out in real time. ~8s.
+- [ ] transfer-mode-offset-muscle.webm — Transfer mode dropdown switched from Offset to Muscle, showing the Muscle limits section and muscle editor panel become available in real time. ~8s.
 - [ ] smoothing-preset-cycle.webm — Smoothing preset dropdown cycled through Off / Low latency / Balanced / Smooth on a moving actor, showing the visible difference in follow lag/jitter at each step. ~15s.
 - [ ] filter-details-custom-cutoff.webm — Filter details expanded, dragging boneFilterMinCutoff by hand while Smoothing preset flips from Balanced to Custom. ~8s.
 
 ## Reference — Muscle Limits
 
 - [ ] muscle-limits-enable-toggle.webm — Muscle limits section expanded, toggling Enable off and on with an arm pushed past its natural range — show the joint popping out of clamp when Enable is off vs held in range when on. ~10s.
-- [ ] retarget-offsets-sliders.webm — Retarget offsets sub-foldout expanded, dragging Arm spread and Shoulder height sliders with a character on screen — show the visible posture shift. ~10s.
+- [ ] retarget-adjustments-sliders.webm — Retarget adjustments expanded, dragging Upper-arm spread and Shoulder height sliders with a character on screen — show the visible posture shift. ~10s.
 - [ ] muscle-editor-min-max-drag.webm — Muscle editor side panel open with a character loaded — expand the Arms group, drag a Min/Max pair on one muscle row, show the joint's range visibly tightening in the viewport. ~15s.
 
 ## Reference — Hand Position Alignment
