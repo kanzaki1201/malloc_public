@@ -2,7 +2,7 @@
 
 Correction for the upper arm and forearm. [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration) keeps the hand target out of the body, but the arm behind it can still clip through the torso or head on a stocky character. This section searches over the arm's muscle-space degrees of freedom to relax the segment away from a collision while keeping the hand where it landed.
 
-This feature is experimental; the recommended way to fix arm-into-body clipping is Retarget offsets (**Upper-arm spread**) plus [hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration).
+This feature is experimental; the recommended way to fix arm-into-body clipping is Retarget adjustments (**Upper-arm spread**) plus [hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration).
 
 ## Settings
 

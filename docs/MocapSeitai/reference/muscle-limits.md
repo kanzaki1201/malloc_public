@@ -1,6 +1,6 @@
 # Muscle limits
 
-Joint-range clamping and per-avatar pose offsets. Only applies in **Muscle** transfer mode; switching to Offset (see [Smoothing](/MocapSeitai/reference/smoothing)) greys out this section and the muscle editor panel.
+Joint-range clamping applies only in **Muscle** transfer mode; switching to Offset (see [Smoothing](/MocapSeitai/reference/smoothing)) greys out this section and the muscle editor panel. The **Retarget adjustments** section below applies in both transfer modes.
 
 ## Settings
 
@@ -12,9 +12,9 @@ Joint-range clamping and per-avatar pose offsets. Only applies in **Muscle** tra
 <!-- CAPTURE: Muscle limits section expanded, toggling Enable off and on with an arm pushed past its natural range — show the joint popping out of clamp when Enable is off vs held in range when on. ~10s -->
 *(media pending)*
 
-### Retarget offsets
+### Retarget adjustments
 
-Small constant offsets applied to the retargeted pose, mirrored left/right. Use these to calibrate posture per avatar. All default 0, range -60 to +60 degrees.
+Small constant adjustments applied to the retargeted pose, mirrored left/right. Use these to calibrate posture per avatar in either transfer mode. All default 0, range -60 to +60 degrees.
 
 - **Upper-arm spread** how far arms sit from the torso.
 - **Forearm preroll** twists the forearm around its long axis.
@@ -24,10 +24,10 @@ Small constant offsets applied to the retargeted pose, mirrored left/right. Use 
 - **Shoulder shift** shoulder position sideways.
 
 ::: tip
-Retarget offsets fix a consistent posture mismatch on one avatar (e.g. rest pose arms too close to the body). Save the result to that avatar's map.
+Retarget adjustments fix a consistent posture mismatch on one avatar (e.g. rest pose arms too close to the body). Save the result to that avatar's map.
 :::
 
-<!-- CAPTURE: Retarget offsets sub-foldout expanded, dragging Upper-arm spread and Shoulder height sliders with a character on screen — show the visible posture shift. ~10s -->
+<!-- CAPTURE: Retarget adjustments expanded, dragging Upper-arm spread and Shoulder height sliders with a character on screen — show the visible posture shift. ~10s -->
 *(media pending)*
 
 - **fingerDirectCopy** copies finger rotations directly from the actor, bypassing the muscle pipeline. (default on)

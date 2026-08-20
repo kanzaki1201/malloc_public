@@ -22,7 +22,7 @@ Always visible above the scrolling sections:
 - **Mode & display** comparison view and skeleton overlays. See [Mode & display](/MocapSeitai/reference/mode-and-display).
 - **Actor body** performer's real-world proportions. See [Actor body](/MocapSeitai/reference/actor-body).
 - **Smoothing** transfer mode, bone smoothing, squat correction. See [Smoothing](/MocapSeitai/reference/smoothing).
-- **Muscle limits** joint-range clamping, retarget offsets, muscle editor. See [Muscle limits](/MocapSeitai/reference/muscle-limits).
+- **Muscle limits** joint-range clamping, retarget adjustments, muscle editor. See [Muscle limits](/MocapSeitai/reference/muscle-limits).
 - **Hand position alignment** spatial hand placement, IK pinning, hand contact. See [Hand position alignment](/MocapSeitai/reference/hand-position-alignment).
 - **Hand anti-penetration** keeps hand targets out of the body. See [Hand anti-penetration](/MocapSeitai/reference/hand-anti-penetration).
 - **Arm anti-penetration** keeps upper arms and forearms out of the body. See [Arm anti-penetration](/MocapSeitai/reference/arm-anti-penetration).
