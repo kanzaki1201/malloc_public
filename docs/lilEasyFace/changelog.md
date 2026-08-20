@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.8.3 -- 2026-08-20
+- Added VRChat support.
+
 ## 0.8.2 — 2026-07-17
 
 - **Stock lilToon → lilEasyFace converter** in the Control Panel: converts every stock lilToon material under the avatar root to the equivalent lilEasyFace shader (matching transparent mode, outline, overlay, FakeShadow variant), keeping existing property values. Unsupported stock variants are skipped and reported.

@@ -45,7 +45,7 @@ Not supported:
 - Universal Render Pipeline: YES
 - High Definition Render Pipeline: Not tested, should work in theory
 - Warudo: YES
-- VRChat: NO
+- VRChat: YES (v0.8.3 and after)
 
 
 ## Install
