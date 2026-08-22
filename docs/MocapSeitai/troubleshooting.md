@@ -1,53 +1,49 @@
 # Troubleshooting
 
-## Common problems
+## Messages/s stays at 0
 
-### Messages/s stays at 0
+1. Check that the selected input mode matches your sender.
+2. Check the sender port against the value in the application.
+3. Allow the application through Windows Firewall on Private networks.
+4. Close another application that uses the same port, then restart the application.
 
-The [Status](/MocapSeitai/reference/connections) line shows `Messages/s: 0` while your tracking app is sending.
+## The receiver does not move
 
-- **Firewall not allowed.** Open Windows Defender Firewall, find MocapSeitai under **Allow an app through firewall**, and check **Private** networks.
-- **Wrong IP or port.** Check that your tracking app's target IP is this PC and the port matches MocapSeitai's **Listen port** / **mocopi port** / **Rokoko port** (whichever matches your [Input mode](/MocapSeitai/reference/connections)).
-- **Port already in use.** MocapSeitai shows a port-unavailable warning when the listen port failed to bind. Close whatever else is using that port and restart MocapSeitai.
+1. Check the output address and port.
+2. For a one-PC setup, use `127.0.0.1` for output.
+3. Check that the receiver accepts VMC input.
+4. Load the same VRM file in the receiver and in MocapSeitai.
 
-### Settings aren't saving
+## The pose looks wrong
 
-Changes reset every launch:
+1. Reset the last tuning change.
+2. Check the actor measurements and the six **Retarget adjustments**.
+3. Use **Ghost** or **Side by side** comparison to see the difference from source motion.
+4. Save a separate sidecar map for each avatar.
 
-- This happens when MocapSeitai is run from inside the ZIP's preview/temp-extraction view. Extract the whole ZIP to a normal folder first.
+## Hand anti-penetration gives an unwanted pose
 
-Per-avatar tuning (colliders, muscle limits, corrections) is not part of app settings:
+Hand anti-penetration is experimental. It can change hand motion and cannot solve every fast motion or model shape.
 
-- Save it with **Save map...** in [Load model](/MocapSeitai/reference/loading-your-model), and load the map next time.
+1. Set the mode to **Off** to confirm that the feature causes the result.
+2. Start again with **Hybrid**.
+3. Check the collider overlay and correct the collider fit if needed.
+4. Test the pose with **Side by side** comparison.
 
-### "Windows protected your PC" (SmartScreen)
+See [Hand anti-penetration](/MocapSeitai/hand-anti-penetration).
 
-The build is unsigned, so SmartScreen flags it on first launch. Click **More info**, then **Run anyway**. This only appears once per downloaded build.
+## A saved tune does not load
 
-### Motion looks wrong in the receiver
+The per-avatar sidecar map stores avatar tuning. It does not apply automatically to every model.
 
-- Load the **same** VRM file in the receiver as in MocapSeitai. Corrections are computed for the model MocapSeitai has loaded.
-- Press **Realign Actor Rig** and **Realign Character Rig** (see [Loading your model](/MocapSeitai/reference/loading-your-model)).
+1. Extract the application archive before you run it.
+2. Save the sidecar map after tuning.
+3. Load the matching sidecar map with the matching avatar.
 
-### Hands/arms clip the body, or claps don't meet
+## Windows blocks the application
 
-See [Common adjustments](/MocapSeitai/common-adjustments) for tuning recipes.
+The build can show a SmartScreen warning because it is unsigned. Select **More info**, then select **Run anyway** if you trust the download source.
 
-### Model sinks or floats when squatting
+## Send a useful bug report
 
-Check **Squat body-scale correction** in [Smoothing](/MocapSeitai/reference/smoothing). It scales hip translation by body proportion so squat depth matches. If it's off, or the [Actor body](/MocapSeitai/reference/actor-body) measurements are inaccurate, squats can under- or over-shoot the floor.
-
-### "Body settings changed" warning
-
-You changed an Actor body value while the loop was running. Press **Realign Actor Rig** and **Realign Character Rig** (see [Loading your model](/MocapSeitai/reference/loading-your-model)). The warning clears once you do.
-
-## Diagnostics
-
-The **Diagnostics** section sits at the bottom of the main panel.
-
-- **Copy diagnostics** copies a diagnostics report to the clipboard. Paste it into a bug report.
-- **Open log folder** opens the folder containing MocapSeitai's log file.
-
-::: tip Filing a bug
-See [Report a Bug](/bug-report). Run **Copy diagnostics** first and paste the report in.
-:::
+Use **Copy diagnostics**, then paste the result into a [bug report](/bug-report). Include the input mode, receiver app, avatar type, and steps that reproduce the problem.

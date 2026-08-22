@@ -4,7 +4,7 @@ layout: home
 hero:
   name: malloc
   text: Tools and shaders for VTubers and 3D creators
-  tagline: MocapSeitai retargets your mocap so hands land where they should; lilEasyFace makes anime face shading in lilToon painless.
+  tagline: MocapSeitai is a helper between your mocap source and renderer; lilEasyFace makes anime face shading in lilToon painless.
   actions:
     - theme: brand
       text: MocapSeitai docs
@@ -18,7 +18,7 @@ hero:
 
 features:
   - title: MocapSeitai
-    details: Mocap retargeting middleware — drop it between your tracking app and your renderer. Proportion-aware corrections make hands reach the face, claps meet, and arms stop clipping.
+    details: Mocap retargeting middleware for VMC workflows. Use proportion-aware retarget adjustments and optional hand anti-penetration to tune one avatar at a time.
     link: /MocapSeitai/quickstart
   - title: lilEasyFace
     details: "Add-on / extension for lilToon: smooth toon normals, face-triangle light, forced perspective, and object-space normal maps as material toggles."

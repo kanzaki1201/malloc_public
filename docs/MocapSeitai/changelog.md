@@ -1,15 +1,15 @@
 # Changelog
 
-## 0.9.x (beta)
+## 0.12.0-beta-1 — Public beta
 
-Initial closed-beta builds.
+Added:
 
-- Inputs: VMC protocol, Sony mocopi (direct receive), Rokoko Studio Live (direct receive), with optional VMC face-blendshape forwarding in mocopi/Rokoko modes
-- Muscle-space retargeting with the correction pipeline: spatial hand alignment, hand-to-hand contact, hand and arm anti-penetration, squat body-scale correction, muscle limits with per-avatar retarget adjustments
-- Per-avatar map files (collider edits + tuning + muscle limits, saved as JSON next to your VRM)
-- Comparison view (ghost / side by side), collider editor, muscle range editor
-- Bilingual UI (English / 日本語)
+- Offset-mode retargeting with six Retarget adjustments.
+- Input modes for VMC, mocopi, Rokoko, and VMC SlimeVR.
+- Corrected VMC output and comparison views: Off, Ghost, and Side by side.
+- Experimental hand anti-penetration modes: Off, SdfSearch, Ragdoll, and Hybrid.
+- Per-avatar sidecar maps for saved tuning.
 
-::: warning Beta
-Settings-file compatibility may change between beta builds.
+::: warning Public beta
+The feature set and sidecar-map format can change before the first stable release. Test an update with a copy of your map.
 :::
