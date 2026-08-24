@@ -16,17 +16,13 @@ Use **Display > Comparison** to check changes:
 
 ## 3. Adjust retargeting
 
-In **Retarget** tab, there are six **Retarget adjustments** for proportion and pose differences between the actor and avatar:
-
-- **Upper-arm spread**
-- **Forearm preroll**
-- **Upper-arm twist**
-- **Upper-leg spread**
-- **Shoulder height**
-- **Shoulder shift**
+In **Retarget** tab, there are six **Retarget adjustments** for proportion and pose differences between the actor and avatar. See [retarget-adjustments](retarget-adjustments.md)
 
 ## 4. Tune spatial hand alignment
 
+**Spatial Hand** uses the hand position relative to the head or shoulders, then places a target for the avatar hand IK. This can help hand gestures retain their context better.
+
+You can tune in **Spatial Hand** tab.
 
 
 ## 5. Tune smoothing
