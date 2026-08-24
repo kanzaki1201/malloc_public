@@ -1,11 +1,13 @@
 # Changelog
 
-## 0.12.0-beta-1 — Public beta
+## 0.12.0-beta-1 — Public beta target
 
 Added:
 
-- Offset-mode retargeting with six Retarget adjustments.
-- Input modes for VMC, mocopi, Rokoko, and VMC SlimeVR.
-- Corrected VMC output and comparison views: Off, Ghost, and Side by side.
-- Experimental hand anti-penetration modes: Off, SdfSearch, Ragdoll, and Hybrid.
-- Per-avatar sidecar maps for saved tuning.
+- VMC, mocopi, and Rokoko input modes, with VMC output.
+- Per-avatar settings that save and load manually in a `.map.json` sidecar file.
+- Offset transfer mode as the beta default, plus Muscle transfer mode and six Retarget adjustments.
+- Spatial Hand alignment controls.
+- Smoothing and comparison views: Off, Ghost, and Side by side.
+- Experimental hand contact.
+- Experimental hand anti-penetration, Off by default, with SdfSearch, Ragdoll, and Hybrid modes. Hybrid is the recommended opt-in mode for this beta.
