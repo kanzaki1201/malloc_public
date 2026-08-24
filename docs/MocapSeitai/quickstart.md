@@ -45,6 +45,8 @@ Start with the shipped settings. Use **Display** > **Comparison** to check chang
 
 Change one control, move through the problem pose, then keep or undo the change. See [Tune your avatar](/MocapSeitai/tuning).
 
+For posture differences, see [Retarget adjustments](/MocapSeitai/retarget-adjustments). For hand-position differences, see [Spatial hands](/MocapSeitai/spatial-hands).
+
 ## Save your settings!
 You can save your settings in **Setup** tab.
 
