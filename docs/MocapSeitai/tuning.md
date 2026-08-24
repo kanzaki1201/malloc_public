@@ -2,21 +2,23 @@
 
 Tune one avatar at a time. Start from the shipped values, then use a short repeatable motion to evaluate each change.
 
-## 1. Load the avatar and sidecar map
+## 1. Load the avatar and settings
 
-Load the avatar first. Load its sidecar map if you already saved one. The map stores per-avatar tuning such as Retarget adjustments and collider edits.
+Load the avatar first. Load its settings if you already saved one. The settings stores per-avatar tuning such as Retarget adjustments and collider edits.
 
-Save the map when the result is good. Do not expect the same map to fit a different avatar.
+Save the settings when the result is good. Do not expect the same settings to fit a different avatar.
 
-## 2. Check actor measurements
+## 2. Turn on Comparison if needed
 
-Set the actor measurements so they describe the tracked person. Incorrect measurements can make retargeting look wrong before fine tuning.
+Use **Display > Comparison** to check changes:
 
-Use the same short motion after each change. A reach, a clap, and a relaxed arm pose are useful checks.
+- **Off**: show only the corrected avatar.
+- **Ghost**: show a comparison overlay.
+- **Side by side**: show corrected and source motion together.
 
 ## 3. Adjust retargeting
 
-The public beta uses Offset mode. It has six **Retarget adjustments** for proportion and pose differences between the actor and avatar:
+In **Retarget** tab, there are six **Retarget adjustments** for proportion and pose differences between the actor and avatar:
 
 - **Upper-arm spread**
 - **Forearm preroll**
@@ -25,17 +27,23 @@ The public beta uses Offset mode. It has six **Retarget adjustments** for propor
 - **Shoulder height**
 - **Shoulder shift**
 
-1. Set **Comparison** to **Ghost** or **Side by side**.
-2. Change one Retarget adjustment by a small amount.
-3. Repeat the target motion.
-4. Keep the change only when it improves the intended pose without making another common pose worse.
+## 4. Tune spatial hand alignment
 
-## 4. Tune hand contact separately
 
-Use a clap or face-touch motion to evaluate hand placement. Retarget adjustments help the base pose. They do not replace correct input calibration.
 
-If hands still enter the body, see [Hand anti-penetration](/MocapSeitai/hand-anti-penetration). That feature is experimental.
+## 5. Tune smoothing
 
-## 5. Save and verify
+By default, MocapSeitai smoothes the final motion before sending out. 
 
-Save the sidecar map. Restart the application, then load the avatar and map again. This confirms that the tune is stored where you expect.
+However, you should be check if your receiver app also does smoothing, in order to avoid double-smoothing.
+
+You can turn off or adjust smoothing in **Smoothing** tab.
+
+
+## 6. Save and verify
+
+Save the settings. Restart the application, then load the avatar and map again. This confirms that the tune is stored where you expect.
+
+## 7. Experiment with experimental features
+
+If hands still enter the body, see [Hand anti-penetration](/MocapSeitai/hand-anti-penetration). 

@@ -8,29 +8,30 @@ The shipped default is **Off**. Enable it only after you tune the base retargeti
 
 ## Choose a mode
 
-| Mode | Use it when |
-| --- | --- |
-| **Off** | You do not need correction, or you want the unchanged retargeted result. |
-| **SdfSearch** | You want the SDF search result without the ragdoll oracle. |
-| **Ragdoll** | You want the ragdoll oracle result for comparison. |
-| **Hybrid** | Start here when you need hand anti-penetration. It combines SDF search with the ragdoll oracle. |
+| Mode          | Description                                                             |
+| ------------- | ----------------------------------------------------------------------- |
+| **SdfSearch** | Forward search of a hand placement that minimizes collider penetration. |
+| **Ragdoll**   | Uses ragdoll for hands.                                                 |
+| **Hybrid**    | SDF search but when the result is ambiguous, consult ragdoll.           |
 
 **Hybrid** is the recommended opt-in mode for this public beta. It is still experimental.
 
 ## Basic workflow
 
 1. Tune actor measurements and Retarget adjustments first.
-2. Set **Comparison** to **Side by side**.
-3. Reproduce the hand-to-body pose that you want to improve.
-4. Select **Hybrid**.
-5. Check the result at normal and fast motion speed.
-6. Keep the mode only if the new pose is better for your use case.
+2. Adjust colliders using **Overlay** and **Adjust Colliders**
+3. Click on each collider to adjust them. 
+4. Click **Adjust Colliders** and **Overlay** again to leave collider editing
+5. Select **Hybrid**.
+6. Reproduce the hand-to-body pose that you want to improve.
+7. Check the result at normal and fast motion speed.
+8. Keep the mode only if the new pose is better for your use case.
 
 ## Check colliders
 
 The feature uses avatar colliders. Turn on the collider overlay before you change collider values. A collider that does not match the model can give a worse result.
 
-Save collider edits in the avatar sidecar map. Test that map only with the avatar that it was made for.
+Save collider edits in the avatar settings file. Test that map only with the avatar that it was made for.
 
 ## Known limits
 

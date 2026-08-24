@@ -16,10 +16,12 @@
 
 ## The pose looks wrong
 
-1. Reset the last tuning change.
-2. Check the actor measurements and the six **Retarget adjustments**.
-3. Use **Ghost** or **Side by side** comparison to see the difference from source motion.
-4. Save a separate sidecar map for each avatar.
+1. Use **Ghost** or **Side by side** comparison in **Display** tab to see the difference from source motion.
+2. Click **Realign character rig** button on the top right.
+3. Click **Realign actor rig** button on the top right.
+4. Check the actor measurements and the six **Retarget adjustments**.
+5. Make sure you use a separate settings for each avatar.
+6. Turn off experimental features.
 
 ## Hand anti-penetration gives an unwanted pose
 

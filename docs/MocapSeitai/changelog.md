@@ -9,7 +9,3 @@ Added:
 - Corrected VMC output and comparison views: Off, Ghost, and Side by side.
 - Experimental hand anti-penetration modes: Off, SdfSearch, Ragdoll, and Hybrid.
 - Per-avatar sidecar maps for saved tuning.
-
-::: warning Public beta
-The feature set and sidecar-map format can change before the first stable release. Test an update with a copy of your map.
-:::
