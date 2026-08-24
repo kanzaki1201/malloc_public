@@ -38,7 +38,7 @@ Hand anti-penetration is experimental. It can change hand motion and cannot solv
 3. Check the collider overlay and correct the collider fit if needed.
 4. Test the pose with **Side by side** comparison.
 
-See [Hand anti-penetration](/MocapSeitai/hand-anti-penetration).
+See [Hand anti-penetration](/MocapSeitai/experimental-features#hand-anti-penetration).
 
 ## A saved tune does not load
 
