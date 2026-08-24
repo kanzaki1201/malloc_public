@@ -40,4 +40,4 @@ Save the settings when the result is good.  You can save your settings in **Setu
 
 ## 7. Experiment with experimental features
 
-If hands still enter the body, see [Hand anti-penetration](/MocapSeitai/hand-anti-penetration). 
+If hands still enter the body, see [Hand anti-penetration](/MocapSeitai/experimental-features#hand-anti-penetration). 
