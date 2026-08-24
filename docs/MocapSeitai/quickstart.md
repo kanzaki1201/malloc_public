@@ -47,4 +47,8 @@ Change one control, move through the problem pose, then keep or undo the change.
 
 ## Save your settings!
 You can save your settings in **Setup** tab.
-Settings are per-avatar. That means you should not apply the settings for an avatar A on any other character that is not that exact same avatar A.
+
+Settings are per-avatar. That means you should not apply the settings for an avatar A on any other character that is not that exact same avatar A. 
+
+Settings are not auto-saved nor auto-loaded. 
+

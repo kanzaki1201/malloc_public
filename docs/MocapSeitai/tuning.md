@@ -4,9 +4,7 @@ Tune one avatar at a time. Start from the shipped values, then use a short repea
 
 ## 1. Load the avatar and settings
 
-Load the avatar first. Load its settings if you already saved one. The settings stores per-avatar tuning such as Retarget adjustments and collider edits.
-
-Save the settings when the result is good. Do not expect the same settings to fit a different avatar.
+Load the avatar first. Load its settings if you already saved one. Do not expect the same settings to fit a different avatar.
 
 ## 2. Turn on Comparison if needed
 
@@ -40,9 +38,9 @@ However, you should be check if your receiver app also does smoothing, in order 
 You can turn off or adjust smoothing in **Smoothing** tab.
 
 
-## 6. Save and verify
+## 6. Save 
 
-Save the settings. Restart the application, then load the avatar and map again. This confirms that the tune is stored where you expect.
+Save the settings when the result is good.  You can save your settings in **Setup** tab. Settings are not auto-saved nor auto-loaded. 
 
 ## 7. Experiment with experimental features
 

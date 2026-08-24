@@ -17,11 +17,17 @@
 ## The pose looks wrong
 
 1. Use **Ghost** or **Side by side** comparison in **Display** tab to see the difference from source motion.
-2. Click **Realign character rig** button on the top right.
-3. Click **Realign actor rig** button on the top right.
-4. Check the actor measurements and the six **Retarget adjustments**.
-5. Make sure you use a separate settings for each avatar.
-6. Turn off experimental features.
+2. Realign. See [Realign](#Realign)
+3. Check the actor measurements and the six **Retarget adjustments**.
+4. Make sure you use a separate settings for each avatar.
+5. Turn off experimental features.
+## Realign
+
+Use the buttons in the upper-right corner when a rig needs a rebuild:
+
+- **Realign actor rig** (source rig): Use this after you recalibrate the sender or switch its tracked model. MocapSeitai reads the incoming skeleton again and rebuilds the source baseline. 
+- **Realign character rig**: Use this when the loaded avatar still has an incorrect pose. 
+
 
 ## Hand anti-penetration gives an unwanted pose
 
