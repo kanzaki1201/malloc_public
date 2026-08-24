@@ -68,7 +68,7 @@ export default defineConfig({
             { text: 'Quickstart', link: '/MocapSeitai/quickstart' },
             { text: 'Tune your avatar', link: '/MocapSeitai/tuning' },
             { text: 'Retarget adjustments', link: '/MocapSeitai/retarget-adjustments' },
-            { text: 'Hand anti-penetration (experimental)', link: '/MocapSeitai/hand-anti-penetration' },
+            { text: 'Experimental features', link: '/MocapSeitai/experimental-features' },
             { text: 'Settings reference', link: '/MocapSeitai/reference' },
             { text: 'Troubleshooting', link: '/MocapSeitai/troubleshooting' },
             { text: 'Changelog', link: '/MocapSeitai/changelog' },
