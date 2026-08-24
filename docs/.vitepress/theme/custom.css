@@ -122,6 +122,7 @@
 .vp-doc h1 { letter-spacing: -0.02em; }
 .vp-doc h2 { letter-spacing: -0.01em; }
 .VPNavBarTitle .title { font-weight: 600; letter-spacing: -0.01em; }
+.vp-doc strong { color: var(--vp-c-brand-1); }
 
 /* ================= Small chrome touches ================= */
 .VPHero .image-container video {

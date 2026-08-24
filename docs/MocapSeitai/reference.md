@@ -17,10 +17,16 @@ For a one-PC receiver, use `127.0.0.1` as the output address.
 
 | Control | Purpose |
 | --- | --- |
-| **Load model** | Load the VRM avatar used for retargeting. |
-| **Load map** | Load the saved per-avatar sidecar map. |
-| **Save map** | Save per-avatar tuning and collider edits. |
+| **Open model** | Load the VRM avatar used for retargeting. |
+| **Load settings** | Load saved tuning and collider settings for this avatar. |
+| **Save settings** | Save tuning and collider settings for this avatar. |
+| **Realign actor rig** | Re-read the incoming skeleton after you recalibrate the sender or switch its tracked model. |
+| **Realign character rig** | Rebuild the character pipeline without reloading the VRM. |
 | **Actor measurements** | Describe the tracked person for retargeting. |
+
+**Realign actor rig** is the source-rig control. Select it after sender recalibration or a sender model change. Keep motion input active while MocapSeitai reads the skeleton again.
+
+Opening a VRM already rebuilds the character pipeline. Select **Realign character rig** only if the avatar pose is still incorrect. **Load settings** does not normally require either realignment button.
 
 ## Retargeting and comparison
 
