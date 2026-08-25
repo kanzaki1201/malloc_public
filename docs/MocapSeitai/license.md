@@ -1,11 +1,11 @@
-# License
+# MocapSeitai License
 
-## MocapSeitai License
-
-Copyright (c) 2026 malloc / Red Hydrogen Studio
+Copyright (c) 2026 malloc / Red Hydrogen Studio\
 All rights reserved.
 
-One license permits one purchaser to install and use MocapSeitai on any number of machines owned or controlled by that purchaser.
+One license permits one individual to install and use MocapSeitai on any number of machines owned or controlled by that individual.
+
+A company or other organization must purchase one license for each individual who uses MocapSeitai.
 
 Commercial and non-commercial use of MocapSeitai and its output is permitted.
 
