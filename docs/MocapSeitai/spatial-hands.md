@@ -82,4 +82,4 @@ Use **Slider** to drag the divider. The left side shows rotation retargeting onl
 
 ## Limits
 
-Spatial hands tune hand placement for one avatar. They do not guarantee that hands meet, avoid the body, or remain correct for every motion.
+Spatial hands tune hand placement based on the relative position of hands and head (or shoulders). They do not guarantee that hands meet, avoid the body, or remain correct for every motion.

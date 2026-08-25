@@ -7,9 +7,11 @@ Use the **Experimental** tab only after you tune the base retargeting. Test one 
 Open **Transfer mode** and select **Mode**:
 
 - **Offset** copies bone rotations through the T-pose offset.
-- **Muscle** uses muscle conversion.
+- **Muscle** uses muscle conversion. It is similar to Unity Mecanim, but not entirely. 
 
 Corrections run in both modes. **Muscle limits** and **Adjust muscles** appear in the **Retarget** tab only in Muscle mode.
+
+![](../assets/Pasted%20image%2020260824215050.png)
 
 ## Hand contact
 
@@ -33,18 +35,10 @@ The shipped default is **Off**. Enable it only after you tune the base retargeti
 
 **Hybrid** is the recommended opt-in mode for this public beta. It is still experimental.
 
-### Basic workflow
-
-1. Tune actor measurements and Retarget adjustments first.
-2. Adjust colliders using **Overlay** and **Adjust Colliders**.
-3. Select **Hybrid**.
-4. Reproduce the hand-to-body pose that you want to improve.
-5. Check the result at normal and fast motion speed.
-6. Keep the mode only if the new pose is better for your use case.
-
 ### Check colliders
+Hand anti-penetration requires fitting body colliders to work. You can adjust colliders in **Experimental > Colliders > Adjust Colliders**. Turn on the collider overlay before you change collider values. 
 
-Turn on the collider overlay before you change collider values. A collider that does not match the model can give a worse result.
+A collider that does not match the model can give a worse result.
 
 Save collider edits in the avatar settings file. Test that file only with the avatar that it was made for.
 
