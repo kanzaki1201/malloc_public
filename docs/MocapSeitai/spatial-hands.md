@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from 'vue'
+
+const comparisonMode = ref('slider')
+</script>
+
 # Spatial hands
 
 **Spatial Hand** places the avatar hands from their position relative to the tracked actor's head or shoulders. It then gives that position to hand IK. This can help maintaining context of some poses.
@@ -6,12 +12,34 @@ Use this page after you tune [Retarget adjustments](/MocapSeitai/retarget-adjust
 
 ## Before and after
 
-<img-comparison-slider value="50" aria-label="Compare the avatar pose before and after Spatial Hand" style="width: 100%; --divider-color: var(--vp-c-brand-1); --default-handle-color: var(--vp-c-brand-1);">
+<div class="spatial-comparison-switch" role="group" aria-label="Comparison view">
+  <button type="button" :aria-pressed="comparisonMode === 'slider'" @click="comparisonMode = 'slider'">Slider</button>
+  <button type="button" :aria-pressed="comparisonMode === 'side-by-side'" @click="comparisonMode = 'side-by-side'">Side by side</button>
+  <button type="button" :aria-pressed="comparisonMode === 'overlay'" @click="comparisonMode = 'overlay'">Overlay</button>
+</div>
+
+<img-comparison-slider v-show="comparisonMode === 'slider'" value="50" aria-label="Compare the avatar pose before and after Spatial Hand" style="width: 100%; --divider-color: var(--vp-c-brand-1); --default-handle-color: var(--vp-c-brand-1);">
   <img slot="first" src="./assets/spatial_before.png" alt="Avatar pose before Spatial Hand" width="100%">
   <img slot="second" src="./assets/spatial_after.png" alt="Avatar pose with Spatial Hand" width="100%">
 </img-comparison-slider>
 
-Drag the divider. The left side shows rotation retargeting only. The right side shows **Spatial Hand**.
+<div v-show="comparisonMode === 'side-by-side'" class="spatial-comparison-grid">
+  <figure>
+    <img src="./assets/spatial_before.png" alt="Avatar pose before Spatial Hand">
+    <figcaption>Before</figcaption>
+  </figure>
+  <figure>
+    <img src="./assets/spatial_after.png" alt="Avatar pose with Spatial Hand">
+    <figcaption>Spatial Hand</figcaption>
+  </figure>
+</div>
+
+<div v-show="comparisonMode === 'overlay'" class="spatial-comparison-overlay" role="img" aria-label="Before and Spatial Hand poses overlaid at equal opacity">
+  <img src="./assets/spatial_before.png" alt="">
+  <img class="spatial-comparison-overlay-after" src="./assets/spatial_after.png" alt="">
+</div>
+
+Use **Slider** to drag the divider. The left side shows rotation retargeting only. The right side shows **Spatial Hand**. **Overlay** stacks both images at equal opacity.
 
 ### Source pose
 
