@@ -7,6 +7,11 @@ export default defineConfig({
   description: "Documentation for malloc's VTuber tools and lilToon shaders.",
   base: '/malloc_public/',
   cleanUrls: true,
+  vue: {
+    template: {
+      compilerOptions: { isCustomElement: (tag) => tag === 'img-comparison-slider' }
+    }
+  },
   lastUpdated: true,
   // Frappé (dark) is the site default skin; toggle switches to Latte.
   appearance: 'dark',
