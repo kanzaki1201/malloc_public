@@ -4,7 +4,7 @@ Use the six **Retarget adjustments** in the **Retarget** tab to correct a consis
 
 
 The following video demonstrates what each adjustment does:
-![](assets/retarget_adjustments.mp4)
+![](./assets/retarget_adjustments.mp4)
 
 
 Notice that retarget adjustments might be partially overidden by [Spatial hands](spatial-hands.md)'s IK.

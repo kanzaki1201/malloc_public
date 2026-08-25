@@ -21,7 +21,7 @@ Use **Slider** to drag the divider. The left side shows rotation retargeting onl
   <button type="button" :aria-pressed="comparisonMode === 'overlay'" @click="comparisonMode = 'overlay'">Overlay</button>
 </div>
 
-![Tracked source pose used for this comparison](app://464190527495f1fb5273cd01ca8763056b57/C:/Users/win11/malloc_public/docs/MocapSeitai/assets/spatial_source.png?1787620406063)
+![Tracked source pose used for this comparison](assets/spatial_source.png)
 
 
 <img-comparison-slider v-show="comparisonMode === 'slider'" value="50" aria-label="Compare the avatar pose before and after Spatial Hand" style="width: 100%; --divider-color: var(--vp-c-brand-1); --default-handle-color: var(--vp-c-brand-1);">
