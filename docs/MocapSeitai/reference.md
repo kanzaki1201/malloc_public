@@ -182,8 +182,6 @@ The selected mode controls which settings appear:
 | **Finger correction** | SdfSearch, Ragdoll, Hybrid | Bend fingers away from selected body colliders. |
 | **Palm alignment** | SdfSearch, Hybrid | Turn a contacting palm toward the surface when its orientation is already close. |
 | **Slab includes thumb** | SdfSearch, Hybrid | Include the thumb in the hand slab used for position correction. |
-| **Mesh depth correction** | SdfSearch, Hybrid | Use the avatar mesh to refine the signed-distance correction. |
-| **Refine clamp (m)**, **Refine gap (m)** | SdfSearch, Hybrid | Limit mesh refinement and set its resting gap. These fields are active when Mesh depth correction is on. |
 | **Gap** | SdfSearch, Ragdoll, Hybrid | Set the base clearance from collider surfaces. |
 | **Max release speed (m/s)** | SdfSearch, Ragdoll, Hybrid | Limit how fast a corrected hand catches up after release. `0` releases immediately. |
 | **Slew (deg/s)** | SdfSearch, Ragdoll, Hybrid | Limit how fast a hand target rotates around a collider. |
