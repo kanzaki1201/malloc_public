@@ -10,4 +10,4 @@ Added:
 - Spatial Hand alignment controls.
 - Smoothing and comparison views: Off, Ghost, and Side by side.
 - Experimental hand contact.
-- Experimental hand anti-penetration, Off by default, with SdfSearch, Ragdoll, and Hybrid modes. Hybrid is the recommended opt-in mode for this beta.
+- Experimental hand anti-penetration, Off by default, with SdfSearch, Ragdoll, and Hybrid modes.
