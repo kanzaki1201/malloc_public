@@ -21,6 +21,8 @@
 3. Check the actor measurements and the six **Retarget adjustments**.
 4. Make sure you use a separate settings for each avatar.
 5. Turn off experimental features.
+
+
 ## Realign
 
 Use the buttons in the upper-right corner when a rig needs a rebuild:

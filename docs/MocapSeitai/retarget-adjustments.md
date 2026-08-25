@@ -11,3 +11,5 @@ Use the six **Retarget adjustments** in the **Retarget** tab to correct a consis
 | **Shoulder height** | Adjust shoulder height. | |
 | **Shoulder shift** | Adjust shoulder position. | |
 
+Notice that retarget adjustments might be partially overidden by [Spatial hands](spatial-hands.md)'s IK.
+
