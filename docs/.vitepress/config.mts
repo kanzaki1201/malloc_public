@@ -7,6 +7,11 @@ export default defineConfig({
   description: "Documentation for malloc's VTuber tools and lilToon shaders.",
   base: '/malloc_public/',
   cleanUrls: true,
+  vue: {
+    template: {
+      compilerOptions: { isCustomElement: (tag) => tag === 'img-comparison-slider' }
+    }
+  },
   lastUpdated: true,
   // Frappé (dark) is the site default skin; toggle switches to Latte.
   appearance: 'dark',
@@ -65,34 +70,13 @@ export default defineConfig({
         {
           text: 'MocapSeitai',
           items: [
-            {
-              text: 'Getting Started',
-              collapsed: false,
-              items: [
-                { text: 'Quickstart', link: '/MocapSeitai/quickstart' },
-                { text: 'Common Adjustments', link: '/MocapSeitai/common-adjustments' }
-              ]
-            },
-            {
-              // Reference pages mirror the app panel top-to-bottom, on purpose.
-              text: 'UI Reference',
-              collapsed: false,
-              // Labels use the app's own sentence-case section names on purpose.
-              items: [
-                { text: 'The panel at a glance', link: '/MocapSeitai/reference/' },
-                { text: 'Connections', link: '/MocapSeitai/reference/connections' },
-                { text: 'Loading your model', link: '/MocapSeitai/reference/loading-your-model' },
-                { text: 'Mode & display', link: '/MocapSeitai/reference/mode-and-display' },
-                { text: 'Actor body', link: '/MocapSeitai/reference/actor-body' },
-                { text: 'Smoothing', link: '/MocapSeitai/reference/smoothing' },
-                { text: 'Muscle limits', link: '/MocapSeitai/reference/muscle-limits' },
-                { text: 'Hand position alignment', link: '/MocapSeitai/reference/hand-position-alignment' },
-                { text: 'Hand anti-penetration', link: '/MocapSeitai/reference/hand-anti-penetration' },
-                { text: 'Arm anti-penetration', link: '/MocapSeitai/reference/arm-anti-penetration' },
-                { text: 'Colliders', link: '/MocapSeitai/reference/colliders' }
-              ]
-            },
-            { text: 'Troubleshooting & Diagnostics', link: '/MocapSeitai/troubleshooting' },
+            { text: 'Quickstart', link: '/MocapSeitai/quickstart' },
+            { text: 'Tune your avatar', link: '/MocapSeitai/tuning' },
+            { text: 'Retarget adjustments', link: '/MocapSeitai/retarget-adjustments' },
+            { text: 'Spatial hands', link: '/MocapSeitai/spatial-hands' },
+            { text: 'Experimental features', link: '/MocapSeitai/experimental-features' },
+            { text: 'Settings reference', link: '/MocapSeitai/reference' },
+            { text: 'Troubleshooting', link: '/MocapSeitai/troubleshooting' },
             { text: 'Changelog', link: '/MocapSeitai/changelog' },
             { text: 'License', link: '/MocapSeitai/license' }
           ]

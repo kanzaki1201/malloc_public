@@ -122,8 +122,70 @@
 .vp-doc h1 { letter-spacing: -0.02em; }
 .vp-doc h2 { letter-spacing: -0.01em; }
 .VPNavBarTitle .title { font-weight: 600; letter-spacing: -0.01em; }
+.vp-doc strong { color: var(--vp-c-brand-1); }
 
 /* ================= Small chrome touches ================= */
 .VPHero .image-container video {
   border-radius: 12px;
+}
+
+.spatial-comparison-switch {
+  display: inline-flex;
+  gap: 4px;
+  margin: 8px 0 16px;
+  padding: 4px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc .spatial-comparison-switch button {
+  border: 0;
+  border-radius: 7px;
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.vp-doc .spatial-comparison-switch button:hover {
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc .spatial-comparison-switch button[aria-pressed='true'] {
+  background: var(--vp-c-brand-1);
+  color: var(--vp-button-brand-text);
+}
+
+.vp-doc .spatial-comparison-switch button:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.spatial-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.spatial-comparison-grid figure { margin: 0; }
+.spatial-comparison-grid img { display: block; width: 100%; }
+.spatial-comparison-grid figcaption { margin-top: 6px; text-align: center; color: var(--vp-c-text-2); font-size: 0.9em; }
+
+.spatial-comparison-overlay {
+  position: relative;
+  line-height: 0;
+}
+
+.spatial-comparison-overlay img {
+  display: block;
+  width: 100%;
+}
+
+.spatial-comparison-overlay-after {
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
 }

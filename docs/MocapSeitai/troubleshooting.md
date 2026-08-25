@@ -1,53 +1,59 @@
 # Troubleshooting
 
-## Common problems
+## Messages/s stays at 0
 
-### Messages/s stays at 0
+1. Check that the selected input mode matches your sender.
+2. Check the sender port against the value in the application.
+3. Allow the application through Windows Firewall on Private networks.
+4. Close another application that uses the same port, then restart the application.
 
-The [Status](/MocapSeitai/reference/connections) line shows `Messages/s: 0` while your tracking app is sending.
+## The receiver does not move
 
-- **Firewall not allowed.** Open Windows Defender Firewall, find MocapSeitai under **Allow an app through firewall**, and check **Private** networks.
-- **Wrong IP or port.** Check that your tracking app's target IP is this PC and the port matches MocapSeitai's **Listen port** / **mocopi port** / **Rokoko port** (whichever matches your [Input mode](/MocapSeitai/reference/connections)).
-- **Port already in use.** MocapSeitai shows a port-unavailable warning when the listen port failed to bind. Close whatever else is using that port and restart MocapSeitai.
+1. Check the output address and port.
+2. For a one-PC setup, use `127.0.0.1` for output.
+3. Check that the receiver accepts VMC input.
+4. Load the same VRM file in the receiver and in MocapSeitai.
 
-### Settings aren't saving
+## The pose looks wrong
 
-Changes reset every launch:
+1. Use **Ghost** or **Side by side** comparison in **Display** tab to see the difference from source motion.
+2. Realign. See [Realign](#Realign)
+3. Check the actor measurements and the six **Retarget adjustments**.
+4. Make sure you use a separate settings for each avatar.
+5. Turn off experimental features.
 
-- This happens when MocapSeitai is run from inside the ZIP's preview/temp-extraction view. Extract the whole ZIP to a normal folder first.
 
-Per-avatar tuning (colliders, muscle limits, corrections) is not part of app settings:
+## Realign
 
-- Save it with **Save map...** in [Load model](/MocapSeitai/reference/loading-your-model), and load the map next time.
+Use the buttons in the upper-right corner when a rig needs a rebuild:
 
-### "Windows protected your PC" (SmartScreen)
+- **Realign actor rig** (source rig): Use this after you recalibrate the sender or switch its tracked model. MocapSeitai reads the incoming skeleton again and rebuilds the source baseline. 
+- **Realign character rig**: Use this when the loaded avatar still has an incorrect pose. 
 
-The build is unsigned, so SmartScreen flags it on first launch. Click **More info**, then **Run anyway**. This only appears once per downloaded build.
 
-### Motion looks wrong in the receiver
+## Hand anti-penetration gives an unwanted pose
 
-- Load the **same** VRM file in the receiver as in MocapSeitai. Corrections are computed for the model MocapSeitai has loaded.
-- Press **Realign Actor Rig** and **Realign Character Rig** (see [Loading your model](/MocapSeitai/reference/loading-your-model)).
+Hand anti-penetration is experimental. It can change hand motion and cannot solve every fast motion or model shape.
 
-### Hands/arms clip the body, or claps don't meet
+1. Set the mode to **Off** to confirm that the feature causes the result.
+2. Start again with **Hybrid**.
+3. Check the collider overlay and correct the collider fit if needed.
+4. Test the pose with **Side by side** comparison.
 
-See [Common adjustments](/MocapSeitai/common-adjustments) for tuning recipes.
+See [Hand anti-penetration](/MocapSeitai/experimental-features#hand-anti-penetration).
 
-### Model sinks or floats when squatting
+## A saved tune does not load
 
-Check **Squat body-scale correction** in [Smoothing](/MocapSeitai/reference/smoothing). It scales hip translation by body proportion so squat depth matches. If it's off, or the [Actor body](/MocapSeitai/reference/actor-body) measurements are inaccurate, squats can under- or over-shoot the floor.
+The per-avatar sidecar map stores avatar tuning. It does not apply automatically to every model.
 
-### "Body settings changed" warning
+1. Extract the application archive before you run it.
+2. Save the sidecar map after tuning.
+3. Load the matching sidecar map with the matching avatar.
 
-You changed an Actor body value while the loop was running. Press **Realign Actor Rig** and **Realign Character Rig** (see [Loading your model](/MocapSeitai/reference/loading-your-model)). The warning clears once you do.
+## Windows blocks the application
 
-## Diagnostics
+The build can show a SmartScreen warning because it is unsigned. Select **More info**, then select **Run anyway** if you trust the download source.
 
-The **Diagnostics** section sits at the bottom of the main panel.
+## Send a useful bug report
 
-- **Copy diagnostics** copies a diagnostics report to the clipboard. Paste it into a bug report.
-- **Open log folder** opens the folder containing MocapSeitai's log file.
-
-::: tip Filing a bug
-See [Report a Bug](/bug-report). Run **Copy diagnostics** first and paste the report in.
-:::
+Use **Copy diagnostics**, then paste the result into a [bug report](/bug-report). Include the input mode, receiver app, avatar type, and steps that reproduce the problem.
