@@ -20,22 +20,6 @@ MocapSeitai does not guarantee zero clipping for every motion or avatar.
 
 MocapSeitai is a Windows application for live humanoid motion capture. It receives motion from VMC, mocopi, or Rokoko, retargets and corrects it to one VRM avatar, and sends corrected VMC data to a receiver application.
 
-### Input and output
-
-Receive VMC, mocopi, or Rokoko motion. Send corrected VMC motion.
-
-### Avatar support
-
-Load VRM 0.x or VRM 1.0. Use the same VRM in the sender and receiver.
-
-### Retargeting
-
-Use Offset mode by default, or try the experimental Muscle mode.
-
-### Review and save
-
-Compare the source and corrected pose, then save settings for each avatar.
-
 ## Retargeting and hand correction
 
 ### Retarget adjustments
@@ -53,14 +37,13 @@ Preserve the relative position of the hands for gestures that depend on body con
 ### Hand contact
 
 ![Before-and-after avatar poses showing experimental hand-contact alignment](./assets/booth_promo_4.png)
-
-Experimentally adjust poses where the hands should meet.
+Adjust where the hands should meet (experimental)
 
 ### Hand anti-penetration
 
 ![Before-and-after avatar poses showing experimental hand anti-penetration](./assets/booth_promo_5.png)
 
-Experiment with physics-based or non-physics-based correction when hands enter the body.
+Physics-based or non-physics-based solutions to prevent hands enter the body. (experimental)
 
 ## Try before you buy
 
