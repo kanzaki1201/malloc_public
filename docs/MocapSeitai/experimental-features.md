@@ -17,6 +17,7 @@ Corrections run in both modes. **Muscle limits** and **Adjust muscles** appear i
 
 The **Hand alignment** foldout contains **Hand contact (experimental)**. When enabled, it pulls hands toward the set **Hand contact distance** as they come together. Use it for claps or heart-hand gestures, then check the result with the intended motion.
 
+
 ## Hand anti-penetration
 
 ::: warning Experimental feature
@@ -37,6 +38,8 @@ The shipped default is **Off**. Enable it only after you tune the base retargeti
 
 ### Check colliders
 Hand anti-penetration requires fitting body colliders to work. You can adjust colliders in **Experimental > Colliders > Adjust Colliders**. Turn on the collider overlay before you change collider values. 
+
+![](../assets/Pasted%20image%2020260825173639.png)
 
 A collider that does not match the model can give a worse result.
 
