@@ -3,7 +3,7 @@
  * `appearance: 'dark'` in config). Accent = Catppuccin pink, matching the mascot.
  * Overrides VitePress default-theme tokens only; layout/components stay stock.
  * Palette reference: https://catppuccin.com/palette (only deliberate deviation:
- * Latte link color is a deepened pink for WCAG AA on the Latte base).
+ * Latte brand color is a deepened pink for WCAG AA text contrast).
  */
 
 /* ================= Latte (light) ================= */
@@ -25,6 +25,10 @@
   --vp-c-brand-2: #ea76cb;   /* pink — hover */
   --vp-c-brand-3: #ea76cb;   /* pink — fills */
   --vp-c-brand-soft: rgba(234, 118, 203, 0.14);
+  --malloc-c-link: #8839ef;  /* mauve */
+  --malloc-c-link-hover: #8839ef;
+  --vp-code-link-color: var(--malloc-c-link);
+  --vp-code-link-hover-color: var(--malloc-c-link-hover);
 
   --vp-button-brand-bg: #b93a9c;
   --vp-button-brand-text: #eff1f5;
@@ -73,6 +77,8 @@
   --vp-c-brand-2: #eebebe;   /* flamingo — hover */
   --vp-c-brand-3: #f4b8e4;
   --vp-c-brand-soft: rgba(244, 184, 228, 0.16);
+  --malloc-c-link: #8caaee;  /* blue */
+  --malloc-c-link-hover: #babbf1; /* lavender */
 
   --vp-button-brand-bg: #f4b8e4;
   --vp-button-brand-text: #232634;
@@ -122,6 +128,8 @@
 .vp-doc h1 { letter-spacing: -0.02em; }
 .vp-doc h2 { letter-spacing: -0.01em; }
 .VPNavBarTitle .title { font-weight: 600; letter-spacing: -0.01em; }
+.vp-doc a { color: var(--malloc-c-link); }
+.vp-doc a:hover { color: var(--malloc-c-link-hover); }
 .vp-doc strong { color: var(--vp-c-brand-1); }
 
 /* ================= Small chrome touches ================= */
