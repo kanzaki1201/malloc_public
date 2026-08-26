@@ -72,6 +72,7 @@ export default defineConfig({
           items: [
             { text: 'Introduction', link: '/MocapSeitai/' },
             { text: 'Quickstart', link: '/MocapSeitai/quickstart' },
+            { text: 'Facial capture', link: '/MocapSeitai/facial-capture' },
             { text: 'Tune your avatar', link: '/MocapSeitai/tuning' },
             { text: 'Retarget adjustments', link: '/MocapSeitai/retarget-adjustments' },
             { text: 'Spatial hands', link: '/MocapSeitai/spatial-hands' },
