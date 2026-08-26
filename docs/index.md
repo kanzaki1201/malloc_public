@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: MocapSeitai docs
-      link: /MocapSeitai/quickstart
+      link: /MocapSeitai/
     - theme: alt
       text: lilEasyFace docs
       link: /lilEasyFace/getting-started
@@ -19,7 +19,7 @@ hero:
 features:
   - title: MocapSeitai
     details: Mocap retargeting middleware for VMC workflows. Use proportion-aware retarget adjustments and optional hand anti-penetration to tune one avatar at a time.
-    link: /MocapSeitai/quickstart
+    link: /MocapSeitai/
   - title: lilEasyFace
     details: "Add-on / extension for lilToon: smooth toon normals, face-triangle light, forced perspective, and object-space normal maps as material toggles."
     link: /lilEasyFace/getting-started

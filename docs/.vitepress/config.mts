@@ -45,7 +45,7 @@ export default defineConfig({
         text: 'Products',
         activeMatch: '^/(MocapSeitai|lilEasyFace|EasyMC2Helper)/',
         items: [
-          { text: 'MocapSeitai', link: '/MocapSeitai/quickstart' },
+          { text: 'MocapSeitai', link: '/MocapSeitai/' },
           { text: 'lilEasyFace', link: '/lilEasyFace/getting-started' },
           { text: 'Easy MC2 Helper', link: '/EasyMC2Helper/quickstart' }
         ]
@@ -70,6 +70,7 @@ export default defineConfig({
         {
           text: 'MocapSeitai',
           items: [
+            { text: 'Introduction', link: '/MocapSeitai/' },
             { text: 'Quickstart', link: '/MocapSeitai/quickstart' },
             { text: 'Tune your avatar', link: '/MocapSeitai/tuning' },
             { text: 'Retarget adjustments', link: '/MocapSeitai/retarget-adjustments' },
