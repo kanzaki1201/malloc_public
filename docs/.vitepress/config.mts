@@ -72,11 +72,11 @@ export default defineConfig({
           items: [
             { text: 'Introduction', link: '/MocapSeitai/' },
             { text: 'Quickstart', link: '/MocapSeitai/quickstart' },
-            { text: 'Facial capture', link: '/MocapSeitai/facial-capture' },
             { text: 'Tune your avatar', link: '/MocapSeitai/tuning' },
             { text: 'Retarget adjustments', link: '/MocapSeitai/retarget-adjustments' },
             { text: 'Spatial hands', link: '/MocapSeitai/spatial-hands' },
             { text: 'Experimental features', link: '/MocapSeitai/experimental-features' },
+            { text: 'Facial capture', link: '/MocapSeitai/facial-capture' },
             { text: 'Settings reference', link: '/MocapSeitai/reference' },
             { text: 'Troubleshooting', link: '/MocapSeitai/troubleshooting' },
             { text: 'Changelog', link: '/MocapSeitai/changelog' },
