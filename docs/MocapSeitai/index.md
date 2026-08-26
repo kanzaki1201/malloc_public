@@ -26,7 +26,6 @@ aside: false
   <section aria-labelledby="mocapseitai-about">
     <h2 id="mocapseitai-about">Live motion in. Corrected VMC out.</h2>
     <p>MocapSeitai is a Windows application for live humanoid motion capture. It receives motion from VMC, mocopi, or Rokoko, retargets and corrects it to one VRM avatar, and sends corrected VMC data to a receiver application.</p>
-
     <div class="mocapseitai-intro-facts">
       <div>
         <h3>Input and output</h3>
