@@ -19,6 +19,11 @@ The trial permits 300 seconds of active streaming in each app session.
 
 ## Install
 
+::: tip Download
+Booth: https://malloc5566.booth.pm/items/8764040
+Gumroad: https://malloc.gumroad.com/l/mocapseitai
+:::
+
 1. Extract the whole download archive to a normal folder.
 2. Run the application from that folder.
 3. When Windows Firewall asks, allow the application on Private networks if your sender or receiver is on your local network.
