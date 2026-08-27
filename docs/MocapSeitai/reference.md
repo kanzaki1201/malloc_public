@@ -25,7 +25,7 @@ The upper-right status area shows the loop state, input status, message rate, se
 | **mocopi port** | Receive mocopi data. This field is active only in mocopi mode. |
 | **Rokoko port** | Receive Rokoko Studio data. This field is active only in Rokoko mode. |
 | **Rokoko actor name** | Follow one Rokoko actor. Leave it empty to use the first actor. This field is active only in Rokoko mode. |
-| **Forward VMC blendshapes** | Forward blendshapes received on the VMC port while mocopi or Rokoko supplies body motion. Check the receiving app because the preview may not show them. |
+| **Forward VMC blendshapes** | Forward blendshapes received on the VMC port while mocopi or Rokoko supplies body motion. Check the receiving app because the preview may not show them. See [Facial capture](/MocapSeitai/facial-capture). |
 | **Register firewall rule (admin)** | Register the Windows firewall rule for the app executable. Windows shows a UAC prompt. |
 
 ### Output
