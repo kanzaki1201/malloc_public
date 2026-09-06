@@ -43,11 +43,12 @@ export default defineConfig({
     nav: [
       {
         text: 'Products',
-        activeMatch: '^/(MocapSeitai|lilEasyFace|EasyMC2Helper)/',
+        activeMatch: '^/(MocapSeitai|lilEasyFace|EasyMC2Helper|NomadUnityBridge)/',
         items: [
           { text: 'MocapSeitai', link: '/MocapSeitai/' },
           { text: 'lilEasyFace', link: '/lilEasyFace/getting-started' },
-          { text: 'Easy MC2 Helper', link: '/EasyMC2Helper/quickstart' }
+          { text: 'Easy MC2 Helper', link: '/EasyMC2Helper/quickstart' },
+          { text: 'Nomad Unity Bridge', link: '/NomadUnityBridge/' }
         ]
       },
       { text: 'Report a Bug', link: '/bug-report' },

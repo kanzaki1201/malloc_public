@@ -26,4 +26,7 @@ features:
   - title: Easy MC2 Helper
     details: Free MagicaCloth 2 tool for Unity — binding maps save and restore your whole cloth setup (settings, colliders, prebuild) in one click; humanoid collider generation included.
     link: /EasyMC2Helper/quickstart
+  - title: Nomad Unity Bridge
+    details: Live, one-way scene preview from Nomad Sculpt to the Unity Editor. Sync multiple objects and assign Unity materials for preview.
+    link: /NomadUnityBridge/
 ---
