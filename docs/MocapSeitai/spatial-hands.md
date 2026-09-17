@@ -8,7 +8,7 @@ const comparisonMode = ref('slider')
 
 **Spatial Hand** places the avatar hands from their position relative to the tracked actor's head or shoulders. It then gives that position to hand IK. This can help maintaining context of some poses.
 
-Use this page after you tune [Retarget adjustments](/MocapSeitai/retarget-adjustments). Spatial Hand does not replace experimental hand contact or hand anti-penetration. See [Experimental features](/MocapSeitai/experimental-features) for those controls.
+Use this page after you tune [Retarget adjustments](/MocapSeitai/retarget-adjustments). Spatial Hand does not replace hand anti-penetration. See [Experimental features](/MocapSeitai/experimental-features) for those controls.
 
 
 ## Before and after
