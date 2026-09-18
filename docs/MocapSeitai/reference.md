@@ -162,13 +162,6 @@ The collider editor contains these controls:
 | **Mirror** | Copy the selected collider values to its opposite-side partner. |
 | **Refit** | Fit all colliders from the avatar mesh again. This discards manual collider edits. |
 
-### Hand alignment
-
-| Control | Purpose |
-| --- | --- |
-| **Hand contact (experimental)** | Pull the hands toward the configured separation when they approach each other. |
-| **Hand contact distance** | Set the separation kept while hand contact is active. |
-
 ### Hand anti-penetration
 
 | Control | Purpose |

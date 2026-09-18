@@ -37,10 +37,6 @@ MocapSeitai is a Windows application for live humanoid motion capture. It receiv
     <figcaption><strong>Spatial Hand</strong><span>Preserve the relative position of the hands for gestures that depend on body context.</span></figcaption>
   </figure>
   <figure>
-    <img src="./assets/booth_promo_4.png" alt="Before-and-after avatar poses showing experimental hand-contact alignment" width="1024" height="1024" loading="lazy" decoding="async">
-    <figcaption><strong>Hand contact</strong><span>Adjust where the hands should meet (experimental)</span></figcaption>
-  </figure>
-  <figure>
     <img src="./assets/booth_promo_5.png" alt="Before-and-after avatar poses showing experimental hand anti-penetration" width="1024" height="1024" loading="lazy" decoding="async">
     <figcaption><strong>Hand anti-penetration</strong><span>Physics-based or non-physics-based solutions to prevent hands enter the body. (experimental)</span></figcaption>
   </figure>
