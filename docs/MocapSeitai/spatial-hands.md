@@ -80,8 +80,6 @@ Use **Slider** to drag the divider. The left side shows rotation retargeting onl
 
 ## Comparison 3
 
-In this comparison, enabling **Spatial Hand** brings the hands from the rig's own proportions to the source distance.
-
 <div class="spatial-comparison-switch" role="group" aria-label="Comparison view">
   <button type="button" :aria-pressed="comparisonMode === 'slider'" @click="comparisonMode = 'slider'">Slider</button>
   <button type="button" :aria-pressed="comparisonMode === 'side-by-side'" @click="comparisonMode = 'side-by-side'">Side by side</button>
